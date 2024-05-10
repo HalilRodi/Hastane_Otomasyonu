@@ -31,6 +31,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaDetay));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.LblAdsoyad = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.LblTc = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.MskSaat = new System.Windows.Forms.MaskedTextBox();
             this.MskTarih = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,10 +52,6 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.LblAdsoyad = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.LblTc = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -84,6 +84,47 @@
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Alma Paneli";
+            // 
+            // LblAdsoyad
+            // 
+            this.LblAdsoyad.AutoSize = true;
+            this.LblAdsoyad.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAdsoyad.Location = new System.Drawing.Point(169, 54);
+            this.LblAdsoyad.Name = "LblAdsoyad";
+            this.LblAdsoyad.Size = new System.Drawing.Size(53, 23);
+            this.LblAdsoyad.TabIndex = 39;
+            this.LblAdsoyad.Text = "Null";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(57, 54);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 23);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "Ad Soyad :";
+            // 
+            // LblTc
+            // 
+            this.LblTc.AutoSize = true;
+            this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTc.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.LblTc.Location = new System.Drawing.Point(169, 94);
+            this.LblTc.Name = "LblTc";
+            this.LblTc.Size = new System.Drawing.Size(153, 23);
+            this.LblTc.TabIndex = 37;
+            this.LblTc.Text = "00000000000";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(15, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 23);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "TC Kimlik No :";
             // 
             // MskSaat
             // 
@@ -213,9 +254,9 @@
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.groupBox4.Controls.Add(this.dataGridView2);
             this.groupBox4.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.groupBox4.Location = new System.Drawing.Point(580, 66);
+            this.groupBox4.Location = new System.Drawing.Point(552, 46);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(652, 511);
+            this.groupBox4.Size = new System.Drawing.Size(706, 548);
             this.groupBox4.TabIndex = 15;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Aktif Randevular";
@@ -235,7 +276,7 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 25);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(646, 483);
+            this.dataGridView2.Size = new System.Drawing.Size(700, 520);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellDoubleClick);
             // 
@@ -265,47 +306,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 18;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // LblAdsoyad
-            // 
-            this.LblAdsoyad.AutoSize = true;
-            this.LblAdsoyad.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblAdsoyad.Location = new System.Drawing.Point(169, 54);
-            this.LblAdsoyad.Name = "LblAdsoyad";
-            this.LblAdsoyad.Size = new System.Drawing.Size(53, 23);
-            this.LblAdsoyad.TabIndex = 39;
-            this.LblAdsoyad.Text = "Null";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(57, 54);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 23);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Ad Soyad :";
-            // 
-            // LblTc
-            // 
-            this.LblTc.AutoSize = true;
-            this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTc.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.LblTc.Location = new System.Drawing.Point(169, 94);
-            this.LblTc.Name = "LblTc";
-            this.LblTc.Size = new System.Drawing.Size(153, 23);
-            this.LblTc.TabIndex = 37;
-            this.LblTc.Text = "00000000000";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(15, 94);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 23);
-            this.label1.TabIndex = 36;
-            this.label1.Text = "TC Kimlik No :";
             // 
             // FrmHastaDetay
             // 

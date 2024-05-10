@@ -76,7 +76,10 @@ namespace Hastane_Proje
         private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular where Randevubrans='" + CmbBrans.Text + "'" + " and Randevudoktor='" + CmbDoktor.Text + "' and Randevudurum=0", bgldetay.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM Tbl_Randevular WHERE HastaTC = @p1 AND Randevubrans = @p2 AND Randevudoktor = @p3 AND Randevudurum = 0", bgldetay.baglanti());
+            da.SelectCommand.Parameters.AddWithValue("@p1", hastatc); // Sadece bu hastaya ait randevuları göstermek için hastanın TC'sini kullanıyoruz.
+            da.SelectCommand.Parameters.AddWithValue("@p2", CmbBrans.Text);
+            da.SelectCommand.Parameters.AddWithValue("@p3", CmbDoktor.Text);
             da.Fill(dt);
             dataGridView2.DataSource = dt;
         }
