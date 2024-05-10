@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.Windows.Forms;
 
 namespace Hastane_Proje
 {
@@ -23,14 +17,6 @@ namespace Hastane_Proje
 
         public string hastatc;
         public string hastaadsoyad;
-
-       // void randevugecmislistele()
-       // {
-       // DataTable dt = new DataTable();
-       // SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular where HastaTC='" + LblTc.Text + "'", bgldetay.baglanti());
-       // da.Fill(dt);
-       //dataGridView1.DataSource = dt;
-       //}
 
         private void FrmHastaDetay_Load(object sender, EventArgs e)
         {
@@ -55,7 +41,6 @@ namespace Hastane_Proje
             bgldetay.baglanti().Close();
         }
 
-
         // Branş seçtikten sonra combobox'a o branşdaki doktorları ekledik
         private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -72,7 +57,7 @@ namespace Hastane_Proje
             bgldetay.baglanti().Close();
         }
 
-        // aktif randevular
+        // Aktif randevular
         private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
@@ -84,14 +69,14 @@ namespace Hastane_Proje
             dataGridView2.DataSource = dt;
         }
 
-        private void dataGridView2_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int secilen = dataGridView2.SelectedCells[0].RowIndex;
+        
 
-            
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
-        private void BtnRandevu_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             DateTime randevuTarih;
             TimeSpan randevuSaat;
@@ -117,20 +102,21 @@ namespace Hastane_Proje
                 return;
             }
 
-            // Veritabanında aynı tarih ve saatte randevu var mı kontrolü
-            SqlCommand kontrol = new SqlCommand("SELECT COUNT(*) FROM Tbl_Randevular WHERE RandevuTarih = @p1 AND RandevuSaat = @p2", bgldetay.baglanti());
-            kontrol.Parameters.AddWithValue("@p1", randevuTarih.ToString("yyyy-MM-dd"));
-            kontrol.Parameters.AddWithValue("@p2", randevuSaat.ToString());
-            int randevuSayisi = (int)kontrol.ExecuteScalar();
+            // Check if the appointment already exists
+            SqlCommand kontrolKomut = new SqlCommand("SELECT COUNT(*) FROM Tbl_Randevular WHERE RandevuTarih = @p1 AND RandevuSaat = @p2", bgldetay.baglanti());
+            kontrolKomut.Parameters.AddWithValue("@p1", randevuTarih); // YYYY-MM-DD formatında tarih
+            kontrolKomut.Parameters.AddWithValue("@p2", randevuSaat); // HH:MM formatında saat
+            int existingAppointmentsCount = (int)kontrolKomut.ExecuteScalar();
             bgldetay.baglanti().Close();
 
-            if (randevuSayisi > 0)
+            // If any appointment exists, show an error message
+            if (existingAppointmentsCount > 0)
             {
-                MessageBox.Show("Seçtiğiniz tarih ve saatte randevu alınmış. Lütfen farklı bir tarih ve saat seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Bu tarihte ve saatte bir randevu zaten mevcut.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            // Randevuyu kaydetme
+            // Insert the new appointment
             SqlCommand kaydet = new SqlCommand("INSERT INTO Tbl_Randevular (HastaTC, RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor) VALUES (@p1, @p2, @p3, @p4, @p5)", bgldetay.baglanti());
             kaydet.Parameters.AddWithValue("@p1", LblTc.Text);
             kaydet.Parameters.AddWithValue("@p2", randevuTarih);
@@ -141,21 +127,6 @@ namespace Hastane_Proje
             bgldetay.baglanti().Close();
 
             MessageBox.Show("Randevu Oluşturuldu", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-
-        private void Rdvİd_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-        private void LblTc_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

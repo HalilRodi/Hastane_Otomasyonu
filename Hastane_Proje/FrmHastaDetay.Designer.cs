@@ -31,6 +31,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHastaDetay));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnRandevu = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.LblAdsoyad = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LblTc = new System.Windows.Forms.Label();
@@ -42,7 +44,6 @@
             this.RchSikayet = new System.Windows.Forms.RichTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Rdvİd = new System.Windows.Forms.TextBox();
-            this.BtnRandevu = new System.Windows.Forms.Button();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -51,16 +52,17 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.BtnRandevu);
+            this.groupBox2.Controls.Add(this.guna2PictureBox1);
             this.groupBox2.Controls.Add(this.LblAdsoyad);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.LblTc);
@@ -72,24 +74,51 @@
             this.groupBox2.Controls.Add(this.RchSikayet);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.Rdvİd);
-            this.groupBox2.Controls.Add(this.BtnRandevu);
             this.groupBox2.Controls.Add(this.CmbDoktor);
             this.groupBox2.Controls.Add(this.CmbBrans);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.groupBox2.Location = new System.Drawing.Point(174, 12);
+            this.groupBox2.Location = new System.Drawing.Point(1, -1);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(372, 679);
+            this.groupBox2.Size = new System.Drawing.Size(545, 692);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Alma Paneli";
+            // 
+            // BtnRandevu
+            // 
+            this.BtnRandevu.BorderRadius = 15;
+            this.BtnRandevu.CheckedState.Parent = this.BtnRandevu;
+            this.BtnRandevu.CustomImages.Parent = this.BtnRandevu;
+            this.BtnRandevu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.BtnRandevu.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnRandevu.ForeColor = System.Drawing.Color.White;
+            this.BtnRandevu.HoverState.Parent = this.BtnRandevu;
+            this.BtnRandevu.Location = new System.Drawing.Point(148, 531);
+            this.BtnRandevu.Name = "BtnRandevu";
+            this.BtnRandevu.ShadowDecoration.Parent = this.BtnRandevu;
+            this.BtnRandevu.Size = new System.Drawing.Size(229, 45);
+            this.BtnRandevu.TabIndex = 40;
+            this.BtnRandevu.Text = "Randevu Al";
+            this.BtnRandevu.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Hastane_Proje.Properties.Resources._49057b6b_8776_46b5_ab74_174403ff5913;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(6, 28);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(156, 145);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 18;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // LblAdsoyad
             // 
             this.LblAdsoyad.AutoSize = true;
             this.LblAdsoyad.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblAdsoyad.Location = new System.Drawing.Point(169, 54);
+            this.LblAdsoyad.Location = new System.Drawing.Point(351, 54);
             this.LblAdsoyad.Name = "LblAdsoyad";
             this.LblAdsoyad.Size = new System.Drawing.Size(53, 23);
             this.LblAdsoyad.TabIndex = 39;
@@ -99,7 +128,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(57, 54);
+            this.label3.Location = new System.Drawing.Point(239, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 23);
             this.label3.TabIndex = 38;
@@ -109,8 +138,8 @@
             // 
             this.LblTc.AutoSize = true;
             this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTc.ForeColor = System.Drawing.Color.MediumSpringGreen;
-            this.LblTc.Location = new System.Drawing.Point(169, 94);
+            this.LblTc.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.LblTc.Location = new System.Drawing.Point(351, 94);
             this.LblTc.Name = "LblTc";
             this.LblTc.Size = new System.Drawing.Size(153, 23);
             this.LblTc.TabIndex = 37;
@@ -120,7 +149,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(15, 94);
+            this.label1.Location = new System.Drawing.Point(197, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 36;
@@ -129,7 +158,7 @@
             // MskSaat
             // 
             this.MskSaat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskSaat.Location = new System.Drawing.Point(113, 275);
+            this.MskSaat.Location = new System.Drawing.Point(295, 275);
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
             this.MskSaat.Size = new System.Drawing.Size(82, 31);
@@ -139,7 +168,7 @@
             // MskTarih
             // 
             this.MskTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTarih.Location = new System.Drawing.Point(113, 229);
+            this.MskTarih.Location = new System.Drawing.Point(295, 229);
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(123, 31);
@@ -150,7 +179,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(39, 279);
+            this.label4.Location = new System.Drawing.Point(221, 279);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 23);
             this.label4.TabIndex = 33;
@@ -160,7 +189,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(27, 229);
+            this.label2.Location = new System.Drawing.Point(209, 229);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 23);
             this.label2.TabIndex = 32;
@@ -169,7 +198,7 @@
             // RchSikayet
             // 
             this.RchSikayet.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RchSikayet.Location = new System.Drawing.Point(113, 324);
+            this.RchSikayet.Location = new System.Drawing.Point(295, 324);
             this.RchSikayet.Name = "RchSikayet";
             this.RchSikayet.Size = new System.Drawing.Size(229, 110);
             this.RchSikayet.TabIndex = 17;
@@ -179,7 +208,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(13, 324);
+            this.label7.Location = new System.Drawing.Point(195, 324);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 23);
             this.label7.TabIndex = 16;
@@ -194,26 +223,12 @@
             this.Rdvİd.Size = new System.Drawing.Size(100, 22);
             this.Rdvİd.TabIndex = 20;
             this.Rdvİd.Visible = false;
-            this.Rdvİd.TextChanged += new System.EventHandler(this.Rdvİd_TextChanged);
-            // 
-            // BtnRandevu
-            // 
-            this.BtnRandevu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.BtnRandevu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnRandevu.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.BtnRandevu.Location = new System.Drawing.Point(35, 461);
-            this.BtnRandevu.Name = "BtnRandevu";
-            this.BtnRandevu.Size = new System.Drawing.Size(307, 53);
-            this.BtnRandevu.TabIndex = 18;
-            this.BtnRandevu.Text = "Randevu Al";
-            this.BtnRandevu.UseVisualStyleBackColor = false;
-            this.BtnRandevu.Click += new System.EventHandler(this.BtnRandevu_Click);
             // 
             // CmbDoktor
             // 
             this.CmbDoktor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbDoktor.FormattingEnabled = true;
-            this.CmbDoktor.Location = new System.Drawing.Point(113, 175);
+            this.CmbDoktor.Location = new System.Drawing.Point(295, 175);
             this.CmbDoktor.Name = "CmbDoktor";
             this.CmbDoktor.Size = new System.Drawing.Size(229, 37);
             this.CmbDoktor.TabIndex = 15;
@@ -223,7 +238,7 @@
             // 
             this.CmbBrans.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbBrans.FormattingEnabled = true;
-            this.CmbBrans.Location = new System.Drawing.Point(113, 129);
+            this.CmbBrans.Location = new System.Drawing.Point(295, 129);
             this.CmbBrans.Name = "CmbBrans";
             this.CmbBrans.Size = new System.Drawing.Size(229, 37);
             this.CmbBrans.TabIndex = 14;
@@ -233,7 +248,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(15, 182);
+            this.label6.Location = new System.Drawing.Point(197, 182);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 23);
             this.label6.TabIndex = 13;
@@ -243,7 +258,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(27, 136);
+            this.label5.Location = new System.Drawing.Point(209, 136);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 23);
             this.label5.TabIndex = 12;
@@ -278,7 +293,6 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(700, 520);
             this.dataGridView2.TabIndex = 0;
-            this.dataGridView2.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellDoubleClick);
             // 
             // BtnClose
             // 
@@ -296,26 +310,13 @@
             this.BtnClose.Text = "X";
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Hastane_Proje.Properties.Resources._49057b6b_8776_46b5_ab74_174403ff5913;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(156, 145);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 18;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // FrmHastaDetay
             // 
-            this.AcceptButton = this.BtnRandevu;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
             this.ClientSize = new System.Drawing.Size(1270, 695);
-            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
@@ -331,9 +332,9 @@
             this.Load += new System.EventHandler(this.FrmHastaDetay_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,7 +347,6 @@
         private System.Windows.Forms.RichTextBox RchSikayet;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox CmbDoktor;
-        private System.Windows.Forms.Button BtnRandevu;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
@@ -361,5 +361,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LblTc;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button BtnRandevu;
     }
 }
