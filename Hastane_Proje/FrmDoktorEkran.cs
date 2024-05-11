@@ -31,7 +31,7 @@ namespace Hastane_Proje
             LblTc.Text = doktortc;
             LblAdsoyad.Text = doktoradsoyad;
 
-            SqlCommand command = new SqlCommand("Select HastaAd, HastaSoyad from Tbl_Hastalar where HastaTC=@p1", bgl.baglanti());
+            SqlCommand command = new SqlCommand("Select DoktorAd, DoktorSoyad from Tbl_Doktorlar where DoktorTC=@p1", bgl.baglanti());
             command.Parameters.AddWithValue("@p1", doktortc);
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
@@ -69,6 +69,7 @@ namespace Hastane_Proje
         private void BtnDetay_Click(object sender, EventArgs e)
         {
             FrmDoktorDetay frmDoktorDetay = new FrmDoktorDetay();
+            frmDoktorDetay.doktortc = LblTc.Text;
             frmDoktorDetay.Show();
         }
     }
