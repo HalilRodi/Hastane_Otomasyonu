@@ -123,9 +123,59 @@ namespace Hastane_Proje.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap dokto_grs1 {
+            get {
+                object obj = ResourceManager.GetObject("dokto grs1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap doktor_ana_ekran {
+            get {
+                object obj = ResourceManager.GetObject("doktor ana ekran", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap doktor_ana_ekran1 {
+            get {
+                object obj = ResourceManager.GetObject("doktor ana ekran1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap HOSPITAL {
             get {
                 object obj = ResourceManager.GetObject("HOSPITAL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap HOSPITAL1 {
+            get {
+                object obj = ResourceManager.GetObject("HOSPITAL1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap HOSPITgAL {
+            get {
+                object obj = ResourceManager.GetObject("HOSPITgAL", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -166,6 +216,26 @@ namespace Hastane_Proje.Properties {
         internal static System.Drawing.Bitmap Kayıt1 {
             get {
                 object obj = ResourceManager.GetObject("Kayıt1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Kayıt2 {
+            get {
+                object obj = ResourceManager.GetObject("Kayıt2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sağlığınız_emin_ellerde___ {
+            get {
+                object obj = ResourceManager.GetObject("Sağlığınız emin ellerde...", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

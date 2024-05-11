@@ -38,7 +38,6 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.BtnGuncelle = new Guna.UI2.WinForms.Guna2Button();
             this.BtnRandevular = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnMuayene = new Guna.UI2.WinForms.Guna2Button();
             this.BtnDetay = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -46,16 +45,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.LblAdsoyad);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.LblTc);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.groupBox1.Location = new System.Drawing.Point(635, 141);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(412, 192);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(372, 167);
+            this.groupBox1.Size = new System.Drawing.Size(386, 247);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Doktor Bilgileri";
@@ -84,7 +83,7 @@
             // 
             this.LblTc.AutoSize = true;
             this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTc.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.LblTc.ForeColor = System.Drawing.Color.Black;
             this.LblTc.Location = new System.Drawing.Point(186, 91);
             this.LblTc.Name = "LblTc";
             this.LblTc.Size = new System.Drawing.Size(153, 23);
@@ -107,11 +106,11 @@
             this.BtnCikis.BorderRadius = 25;
             this.BtnCikis.CheckedState.Parent = this.BtnCikis;
             this.BtnCikis.CustomImages.Parent = this.BtnCikis;
-            this.BtnCikis.FillColor = System.Drawing.Color.Red;
+            this.BtnCikis.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
             this.BtnCikis.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnCikis.ForeColor = System.Drawing.Color.White;
             this.BtnCikis.HoverState.Parent = this.BtnCikis;
-            this.BtnCikis.Location = new System.Drawing.Point(967, 521);
+            this.BtnCikis.Location = new System.Drawing.Point(959, 498);
             this.BtnCikis.Name = "BtnCikis";
             this.BtnCikis.ShadowDecoration.Parent = this.BtnCikis;
             this.BtnCikis.Size = new System.Drawing.Size(160, 48);
@@ -123,7 +122,7 @@
             // 
             this.BtnClose.CheckedState.Parent = this.BtnClose;
             this.BtnClose.CustomImages.Parent = this.BtnClose;
-            this.BtnClose.FillColor = System.Drawing.Color.Red;
+            this.BtnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
             this.BtnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnClose.ForeColor = System.Drawing.Color.White;
             this.BtnClose.HoverState.Parent = this.BtnClose;
@@ -154,7 +153,7 @@
             this.BtnGuncelle.BorderRadius = 25;
             this.BtnGuncelle.CheckedState.Parent = this.BtnGuncelle;
             this.BtnGuncelle.CustomImages.Parent = this.BtnGuncelle;
-            this.BtnGuncelle.FillColor = System.Drawing.Color.White;
+            this.BtnGuncelle.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnGuncelle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnGuncelle.ForeColor = System.Drawing.Color.Black;
             this.BtnGuncelle.HoverState.Parent = this.BtnGuncelle;
@@ -172,7 +171,7 @@
             this.BtnRandevular.BorderRadius = 25;
             this.BtnRandevular.CheckedState.Parent = this.BtnRandevular;
             this.BtnRandevular.CustomImages.Parent = this.BtnRandevular;
-            this.BtnRandevular.FillColor = System.Drawing.Color.White;
+            this.BtnRandevular.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnRandevular.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnRandevular.ForeColor = System.Drawing.Color.Black;
             this.BtnRandevular.HoverState.Parent = this.BtnRandevular;
@@ -183,31 +182,13 @@
             this.BtnRandevular.TabIndex = 21;
             this.BtnRandevular.Text = "Randevularım";
             // 
-            // BtnMuayene
-            // 
-            this.BtnMuayene.BackColor = System.Drawing.Color.Transparent;
-            this.BtnMuayene.BorderRadius = 25;
-            this.BtnMuayene.CheckedState.Parent = this.BtnMuayene;
-            this.BtnMuayene.CustomImages.Parent = this.BtnMuayene;
-            this.BtnMuayene.FillColor = System.Drawing.Color.White;
-            this.BtnMuayene.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnMuayene.ForeColor = System.Drawing.Color.Black;
-            this.BtnMuayene.HoverState.Parent = this.BtnMuayene;
-            this.BtnMuayene.Location = new System.Drawing.Point(456, 39);
-            this.BtnMuayene.Name = "BtnMuayene";
-            this.BtnMuayene.ShadowDecoration.Parent = this.BtnMuayene;
-            this.BtnMuayene.Size = new System.Drawing.Size(232, 55);
-            this.BtnMuayene.TabIndex = 20;
-            this.BtnMuayene.Text = "Muayene Et";
-            this.BtnMuayene.Click += new System.EventHandler(this.BtnMuayene_Click);
-            // 
             // BtnDetay
             // 
             this.BtnDetay.BackColor = System.Drawing.Color.Transparent;
             this.BtnDetay.BorderRadius = 25;
             this.BtnDetay.CheckedState.Parent = this.BtnDetay;
             this.BtnDetay.CustomImages.Parent = this.BtnDetay;
-            this.BtnDetay.FillColor = System.Drawing.Color.White;
+            this.BtnDetay.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnDetay.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnDetay.ForeColor = System.Drawing.Color.Black;
             this.BtnDetay.HoverState.Parent = this.BtnDetay;
@@ -223,8 +204,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.Kayıt1;
-            this.ClientSize = new System.Drawing.Size(1131, 572);
+            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.doktor_ana_ekran1;
+            this.ClientSize = new System.Drawing.Size(1147, 611);
             this.Controls.Add(this.BtnDetay);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnCikis);
@@ -232,7 +213,6 @@
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.BtnRandevular);
-            this.Controls.Add(this.BtnMuayene);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDoktorEkran";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -257,7 +237,6 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button BtnGuncelle;
         private Guna.UI2.WinForms.Guna2Button BtnRandevular;
-        private Guna.UI2.WinForms.Guna2Button BtnMuayene;
         private Guna.UI2.WinForms.Guna2Button BtnDetay;
     }
 }

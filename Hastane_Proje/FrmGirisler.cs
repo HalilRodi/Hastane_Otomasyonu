@@ -47,5 +47,7 @@ namespace Hastane_Proje
         {
             Application.Exit();
         }
+
+        
     }
 }

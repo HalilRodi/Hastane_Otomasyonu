@@ -151,7 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.dokto_grs;
+            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.dokto_grs1;
             this.ClientSize = new System.Drawing.Size(751, 540);
             this.Controls.Add(this.BtnGiris);
             this.Controls.Add(this.guna2Button1);

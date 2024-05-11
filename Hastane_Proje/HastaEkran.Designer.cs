@@ -133,7 +133,7 @@
             // 
             this.BtnClose.CheckedState.Parent = this.BtnClose;
             this.BtnClose.CustomImages.Parent = this.BtnClose;
-            this.BtnClose.FillColor = System.Drawing.Color.Red;
+            this.BtnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
             this.BtnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnClose.ForeColor = System.Drawing.Color.White;
             this.BtnClose.HoverState.Parent = this.BtnClose;
@@ -151,7 +151,7 @@
             this.BtnCikis.BorderRadius = 25;
             this.BtnCikis.CheckedState.Parent = this.BtnCikis;
             this.BtnCikis.CustomImages.Parent = this.BtnCikis;
-            this.BtnCikis.FillColor = System.Drawing.Color.Red;
+            this.BtnCikis.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
             this.BtnCikis.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnCikis.ForeColor = System.Drawing.Color.White;
             this.BtnCikis.HoverState.Parent = this.BtnCikis;
@@ -165,14 +165,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.LblAdsoyad);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.LblTc);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.ForeColor = System.Drawing.Color.MediumAquamarine;
-            this.groupBox1.Location = new System.Drawing.Point(643, 149);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(733, 99);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(372, 167);
             this.groupBox1.TabIndex = 18;
@@ -184,16 +184,18 @@
             // 
             this.LblAdsoyad.AutoSize = true;
             this.LblAdsoyad.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAdsoyad.ForeColor = System.Drawing.Color.Black;
             this.LblAdsoyad.Location = new System.Drawing.Point(186, 51);
             this.LblAdsoyad.Name = "LblAdsoyad";
-            this.LblAdsoyad.Size = new System.Drawing.Size(53, 23);
+            this.LblAdsoyad.Size = new System.Drawing.Size(104, 23);
             this.LblAdsoyad.TabIndex = 11;
-            this.LblAdsoyad.Text = "Null";
+            this.LblAdsoyad.Text = "Elif Çiçek";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(74, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 23);
@@ -204,17 +206,18 @@
             // 
             this.LblTc.AutoSize = true;
             this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTc.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.LblTc.ForeColor = System.Drawing.Color.Black;
             this.LblTc.Location = new System.Drawing.Point(186, 91);
             this.LblTc.Name = "LblTc";
-            this.LblTc.Size = new System.Drawing.Size(153, 23);
+            this.LblTc.Size = new System.Drawing.Size(138, 23);
             this.LblTc.TabIndex = 9;
-            this.LblTc.Text = "00000000000";
+            this.LblTc.Text = "15248632578";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(32, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 23);
@@ -225,7 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.Kayıt;
+            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.Kayıt2;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1147, 611);
             this.Controls.Add(this.groupBox1);

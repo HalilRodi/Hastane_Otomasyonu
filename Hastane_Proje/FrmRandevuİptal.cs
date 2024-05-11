@@ -60,5 +60,7 @@ namespace Hastane_Proje
             }
             bgldetay.baglanti().Close();
         }
+
+       
     }
 }

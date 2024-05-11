@@ -300,5 +300,26 @@
   <ItemGroup>
     <None Include="Resources\sekreter grs.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dokto grs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sağlığınız emin ellerde....png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOSPITgAL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HOSPITAL1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doktor ana ekran.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kayıt2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doktor ana ekran1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

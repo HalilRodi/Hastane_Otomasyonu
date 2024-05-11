@@ -96,7 +96,7 @@
             // 
             // BtnGiris
             // 
-            this.BtnGiris.BackColor = System.Drawing.Color.White;
+            this.BtnGiris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
             this.BtnGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnGiris.ForeColor = System.Drawing.Color.Black;
             this.BtnGiris.Location = new System.Drawing.Point(209, 390);
@@ -111,7 +111,7 @@
             // 
             this.BtnClose.CheckedState.Parent = this.BtnClose;
             this.BtnClose.CustomImages.Parent = this.BtnClose;
-            this.BtnClose.FillColor = System.Drawing.Color.Red;
+            this.BtnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
             this.BtnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnClose.ForeColor = System.Drawing.Color.White;
             this.BtnClose.HoverState.Parent = this.BtnClose;
@@ -148,7 +148,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.HOSPITAL;
+            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.HOSPITAL1;
             this.ClientSize = new System.Drawing.Size(767, 579);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnClose);

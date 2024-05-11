@@ -40,15 +40,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.BtnKayıt = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label8 = new System.Windows.Forms.Label();
             this.MskTc = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // TxtAd
@@ -162,19 +158,10 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Şifre :";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(505, 25);
-            this.panel1.TabIndex = 12;
-            // 
             // BtnKayıt
             // 
             this.BtnKayıt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.BtnKayıt.Font = new System.Drawing.Font("HP Simplified", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnKayıt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKayıt.ForeColor = System.Drawing.Color.MediumAquamarine;
             this.BtnKayıt.Location = new System.Drawing.Point(94, 400);
             this.BtnKayıt.Name = "BtnKayıt";
@@ -183,27 +170,6 @@
             this.BtnKayıt.Text = "Kayıt Ol";
             this.BtnKayıt.UseVisualStyleBackColor = false;
             this.BtnKayıt.Click += new System.EventHandler(this.BtnKayıt_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 485);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(505, 47);
-            this.panel2.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(193, 16);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(133, 14);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "ONUR ÖZEN 13.05.2022";
             // 
             // checkBox1
             // 
@@ -222,14 +188,14 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(388, 265);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 22);
+            this.label8.Size = new System.Drawing.Size(66, 24);
             this.label8.TabIndex = 15;
             this.label8.Text = "label8";
             this.label8.Visible = false;
             // 
             // MskTc
             // 
-            this.MskTc.Font = new System.Drawing.Font("HP Simplified Hans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.MskTc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MskTc.Location = new System.Drawing.Point(210, 158);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
@@ -239,7 +205,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("HP Simplified Hans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.maskedTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.maskedTextBox1.Location = new System.Drawing.Point(210, 209);
             this.maskedTextBox1.Mask = "(999) 000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
@@ -249,17 +215,15 @@
             // FrmHastaKayıt
             // 
             this.AcceptButton = this.BtnKayıt;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(505, 532);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.BtnKayıt);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -272,7 +236,7 @@
             this.Controls.Add(this.MskTc);
             this.Controls.Add(this.TxtSoyad);
             this.Controls.Add(this.TxtAd);
-            this.Font = new System.Drawing.Font("HP Simplified Hans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -281,8 +245,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hasta Kayıt Ekranı";
             this.Load += new System.EventHandler(this.FrmHastaKayıt_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,10 +263,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnKayıt;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.MaskedTextBox MskTc;

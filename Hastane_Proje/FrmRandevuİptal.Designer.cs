@@ -30,6 +30,8 @@
         {
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CmbDoktor = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.CmbRandevu = new Guna.UI2.WinForms.Guna2ComboBox();
             this.BtnRandevuiptal = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -40,8 +42,6 @@
             this.Rdvİd = new System.Windows.Forms.TextBox();
             this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.CmbDoktor = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.groupBox2.Controls.Add(this.CmbDoktor);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.CmbRandevu);
@@ -76,13 +76,34 @@
             this.groupBox2.Controls.Add(this.Rdvİd);
             this.groupBox2.Controls.Add(this.CmbBrans);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(28, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(591, 618);
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Randevu Alma Paneli";
+            // 
+            // CmbDoktor
+            // 
+            this.CmbDoktor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.CmbDoktor.FormattingEnabled = true;
+            this.CmbDoktor.Location = new System.Drawing.Point(218, 351);
+            this.CmbDoktor.Name = "CmbDoktor";
+            this.CmbDoktor.Size = new System.Drawing.Size(229, 37);
+            this.CmbDoktor.TabIndex = 43;
+            this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.CmbDoktor_SelectedIndexChanged_1);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(120, 351);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(92, 23);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Doktor :";
             // 
             // CmbRandevu
             // 
@@ -107,12 +128,13 @@
             // 
             // BtnRandevuiptal
             // 
+            this.BtnRandevuiptal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BtnRandevuiptal.BorderRadius = 15;
             this.BtnRandevuiptal.CheckedState.Parent = this.BtnRandevuiptal;
             this.BtnRandevuiptal.CustomImages.Parent = this.BtnRandevuiptal;
-            this.BtnRandevuiptal.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(182)))), ((int)(((byte)(182)))));
+            this.BtnRandevuiptal.FillColor = System.Drawing.Color.White;
             this.BtnRandevuiptal.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnRandevuiptal.ForeColor = System.Drawing.Color.White;
+            this.BtnRandevuiptal.ForeColor = System.Drawing.Color.Black;
             this.BtnRandevuiptal.HoverState.Parent = this.BtnRandevuiptal;
             this.BtnRandevuiptal.Location = new System.Drawing.Point(177, 520);
             this.BtnRandevuiptal.Name = "BtnRandevuiptal";
@@ -124,7 +146,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::Hastane_Proje.Properties.Resources._49057b6b_8776_46b5_ab74_174403ff5913;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(6, 28);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(17, 38);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(156, 145);
@@ -136,7 +158,8 @@
             // 
             this.LblAdsoyad.AutoSize = true;
             this.LblAdsoyad.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblAdsoyad.Location = new System.Drawing.Point(274, 214);
+            this.LblAdsoyad.ForeColor = System.Drawing.Color.Black;
+            this.LblAdsoyad.Location = new System.Drawing.Point(284, 220);
             this.LblAdsoyad.Name = "LblAdsoyad";
             this.LblAdsoyad.Size = new System.Drawing.Size(53, 23);
             this.LblAdsoyad.TabIndex = 39;
@@ -146,7 +169,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(162, 214);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(172, 220);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 23);
             this.label3.TabIndex = 38;
@@ -156,7 +180,7 @@
             // 
             this.LblTc.AutoSize = true;
             this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTc.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.LblTc.ForeColor = System.Drawing.Color.Black;
             this.LblTc.Location = new System.Drawing.Point(274, 254);
             this.LblTc.Name = "LblTc";
             this.LblTc.Size = new System.Drawing.Size(153, 23);
@@ -167,6 +191,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(120, 254);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 23);
@@ -175,9 +200,9 @@
             // 
             // Rdvİd
             // 
-            this.Rdvİd.BackColor = System.Drawing.Color.White;
+            this.Rdvİd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Rdvİd.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Rdvİd.Location = new System.Drawing.Point(177, 198);
+            this.Rdvİd.Location = new System.Drawing.Point(441, 220);
             this.Rdvİd.Name = "Rdvİd";
             this.Rdvİd.Size = new System.Drawing.Size(100, 13);
             this.Rdvİd.TabIndex = 20;
@@ -196,31 +221,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(132, 296);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 23);
             this.label5.TabIndex = 12;
             this.label5.Text = "Branş :";
-            // 
-            // CmbDoktor
-            // 
-            this.CmbDoktor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CmbDoktor.FormattingEnabled = true;
-            this.CmbDoktor.Location = new System.Drawing.Point(218, 351);
-            this.CmbDoktor.Name = "CmbDoktor";
-            this.CmbDoktor.Size = new System.Drawing.Size(229, 37);
-            this.CmbDoktor.TabIndex = 43;
-            this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.CmbDoktor_SelectedIndexChanged_1);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(120, 351);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 23);
-            this.label6.TabIndex = 42;
-            this.label6.Text = "Doktor :";
             // 
             // FrmRandevuİptal
             // 
