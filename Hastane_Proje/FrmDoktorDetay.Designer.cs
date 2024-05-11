@@ -35,9 +35,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.LblTc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.RchSikayet = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -46,8 +43,8 @@
             this.BtnCıkıs = new System.Windows.Forms.Button();
             this.BtnDuyuru = new System.Windows.Forms.Button();
             this.BtnBilgiDuzenle = new System.Windows.Forms.Button();
+            this.BtnMuayene = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -109,36 +106,6 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "TC Kimlik No :";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.BlueViolet;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1270, 25);
-            this.panel1.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.BlueViolet;
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 665);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1270, 30);
-            this.panel2.TabIndex = 15;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Corbel", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(573, 8);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(133, 14);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "ONUR ÖZEN 13.05.2022";
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
@@ -154,7 +121,7 @@
             // RchSikayet
             // 
             this.RchSikayet.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.RchSikayet.Font = new System.Drawing.Font("HP Simplified", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RchSikayet.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.RchSikayet.Location = new System.Drawing.Point(3, 25);
             this.RchSikayet.Name = "RchSikayet";
             this.RchSikayet.Size = new System.Drawing.Size(366, 244);
@@ -179,8 +146,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.PapayaWhip;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("HP Simplified Hans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.BlueViolet;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -197,6 +164,7 @@
             // 
             this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
             this.groupBox4.Controls.Add(this.BtnCıkıs);
+            this.groupBox4.Controls.Add(this.BtnMuayene);
             this.groupBox4.Controls.Add(this.BtnDuyuru);
             this.groupBox4.Controls.Add(this.BtnBilgiDuzenle);
             this.groupBox4.ForeColor = System.Drawing.Color.BlueViolet;
@@ -210,11 +178,11 @@
             // BtnCıkıs
             // 
             this.BtnCıkıs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.BtnCıkıs.Font = new System.Drawing.Font("HP Simplified", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnCıkıs.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnCıkıs.ForeColor = System.Drawing.Color.White;
-            this.BtnCıkıs.Location = new System.Drawing.Point(32, 95);
+            this.BtnCıkıs.Location = new System.Drawing.Point(188, 95);
             this.BtnCıkıs.Name = "BtnCıkıs";
-            this.BtnCıkıs.Size = new System.Drawing.Size(300, 48);
+            this.BtnCıkıs.Size = new System.Drawing.Size(150, 48);
             this.BtnCıkıs.TabIndex = 22;
             this.BtnCıkıs.Text = "Çıkış";
             this.BtnCıkıs.UseVisualStyleBackColor = false;
@@ -223,9 +191,9 @@
             // BtnDuyuru
             // 
             this.BtnDuyuru.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.BtnDuyuru.Font = new System.Drawing.Font("HP Simplified", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnDuyuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnDuyuru.ForeColor = System.Drawing.Color.White;
-            this.BtnDuyuru.Location = new System.Drawing.Point(188, 41);
+            this.BtnDuyuru.Location = new System.Drawing.Point(32, 95);
             this.BtnDuyuru.Name = "BtnDuyuru";
             this.BtnDuyuru.Size = new System.Drawing.Size(150, 48);
             this.BtnDuyuru.TabIndex = 20;
@@ -236,7 +204,7 @@
             // BtnBilgiDuzenle
             // 
             this.BtnBilgiDuzenle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.BtnBilgiDuzenle.Font = new System.Drawing.Font("HP Simplified", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnBilgiDuzenle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnBilgiDuzenle.ForeColor = System.Drawing.Color.White;
             this.BtnBilgiDuzenle.Location = new System.Drawing.Point(32, 41);
             this.BtnBilgiDuzenle.Name = "BtnBilgiDuzenle";
@@ -246,19 +214,30 @@
             this.BtnBilgiDuzenle.UseVisualStyleBackColor = false;
             this.BtnBilgiDuzenle.Click += new System.EventHandler(this.BtnBilgiDuzenle_Click);
             // 
+            // BtnMuayene
+            // 
+            this.BtnMuayene.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.BtnMuayene.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnMuayene.ForeColor = System.Drawing.Color.White;
+            this.BtnMuayene.Location = new System.Drawing.Point(190, 41);
+            this.BtnMuayene.Name = "BtnMuayene";
+            this.BtnMuayene.Size = new System.Drawing.Size(150, 48);
+            this.BtnMuayene.TabIndex = 20;
+            this.BtnMuayene.Text = "Muayene Et";
+            this.BtnMuayene.UseVisualStyleBackColor = false;
+            this.BtnMuayene.Click += new System.EventHandler(this.BtnDuyuru_Click);
+            // 
             // FrmDoktorDetay
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1270, 695);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
-            this.Font = new System.Drawing.Font("HP Simplified Hans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -269,8 +248,6 @@
             this.Load += new System.EventHandler(this.FrmDoktorDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -286,9 +263,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LblTc;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -297,5 +271,6 @@
         private System.Windows.Forms.Button BtnDuyuru;
         private System.Windows.Forms.Button BtnBilgiDuzenle;
         private System.Windows.Forms.Button BtnCıkıs;
+        private System.Windows.Forms.Button BtnMuayene;
     }
 }

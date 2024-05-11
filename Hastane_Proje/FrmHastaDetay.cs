@@ -39,15 +39,24 @@ namespace Hastane_Proje
                 CmbBrans.Items.Add(dr2[0].ToString());
             }
             bgldetay.baglanti().Close();
+
+            // Subscribe to the SelectedIndexChanged event of CmbBrans
+            CmbBrans.SelectedIndexChanged += CmbBrans_SelectedIndexChanged;
         }
 
-        // Branş seçtikten sonra combobox'a o branşdaki doktorları ekledik
+        // Event handler for CmbBrans SelectedIndexChanged event
         private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CmbDoktor.Text = "";
+            // Call the method to populate the doctors ComboBox (CmbDoktor)
+            PopulateDoctorsComboBox();
+        }
+
+        // Method to populate the doctors ComboBox (CmbDoktor)
+        private void PopulateDoctorsComboBox()
+        {
             CmbDoktor.Items.Clear();
 
-            SqlCommand komut3 = new SqlCommand("Select Doktorad,Doktorsoyad From Tbl_Doktorlar where Doktorbrans=@b1", bgldetay.baglanti());
+            SqlCommand komut3 = new SqlCommand("Select Doktorad, Doktorsoyad From Tbl_Doktorlar where Doktorbrans=@b1", bgldetay.baglanti());
             komut3.Parameters.AddWithValue("@b1", CmbBrans.Text);
             SqlDataReader dr3 = komut3.ExecuteReader();
             while (dr3.Read())
@@ -69,14 +78,14 @@ namespace Hastane_Proje
             dataGridView2.DataSource = dt;
         }
 
-        
-
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        
+
+        private void BtnRandevu_Click_1(object sender, EventArgs e)
         {
             DateTime randevuTarih;
             TimeSpan randevuSaat;
@@ -102,9 +111,12 @@ namespace Hastane_Proje
                 return;
             }
 
+            // Convert the date to the format expected by SQL Server
+            string formattedDate = randevuTarih.ToString("yyyy-MM-dd");
+
             // Check if the appointment already exists
             SqlCommand kontrolKomut = new SqlCommand("SELECT COUNT(*) FROM Tbl_Randevular WHERE RandevuTarih = @p1 AND RandevuSaat = @p2", bgldetay.baglanti());
-            kontrolKomut.Parameters.AddWithValue("@p1", randevuTarih); // YYYY-MM-DD formatında tarih
+            kontrolKomut.Parameters.AddWithValue("@p1", formattedDate); // Use the formatted date
             kontrolKomut.Parameters.AddWithValue("@p2", randevuSaat); // HH:MM formatında saat
             int existingAppointmentsCount = (int)kontrolKomut.ExecuteScalar();
             bgldetay.baglanti().Close();
@@ -119,7 +131,7 @@ namespace Hastane_Proje
             // Insert the new appointment
             SqlCommand kaydet = new SqlCommand("INSERT INTO Tbl_Randevular (HastaTC, RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor) VALUES (@p1, @p2, @p3, @p4, @p5)", bgldetay.baglanti());
             kaydet.Parameters.AddWithValue("@p1", LblTc.Text);
-            kaydet.Parameters.AddWithValue("@p2", randevuTarih);
+            kaydet.Parameters.AddWithValue("@p2", formattedDate); // Use the formatted date
             kaydet.Parameters.AddWithValue("@p3", randevuSaat);
             kaydet.Parameters.AddWithValue("@p4", CmbBrans.Text);
             kaydet.Parameters.AddWithValue("@p5", CmbDoktor.Text);

@@ -57,7 +57,7 @@ namespace Hastane_Proje
 
         private void BtnDuyuru_Click(object sender, EventArgs e)
         {
-            FrmDuyurular frm = new FrmDuyurular();
+            FrmMuayene frm = new FrmMuayene();
             frm.Show();
         }
 

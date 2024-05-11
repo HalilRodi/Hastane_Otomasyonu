@@ -101,7 +101,7 @@
             this.BtnRandevu.Size = new System.Drawing.Size(229, 45);
             this.BtnRandevu.TabIndex = 40;
             this.BtnRandevu.Text = "Randevu Al";
-            this.BtnRandevu.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.BtnRandevu.Click += new System.EventHandler(this.BtnRandevu_Click_1);
             // 
             // guna2PictureBox1
             // 

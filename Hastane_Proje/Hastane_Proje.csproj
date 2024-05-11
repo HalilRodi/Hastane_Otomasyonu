@@ -70,6 +70,12 @@
     <Compile Include="FrmDoktorDetay.Designer.cs">
       <DependentUpon>FrmDoktorDetay.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDoktorEkran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorEkran.Designer.cs">
+      <DependentUpon>FrmDoktorEkran.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDoktorGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,11 +130,29 @@
     <Compile Include="FrmHastaKayıt.Designer.cs">
       <DependentUpon>FrmHastaKayıt.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMuayene.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMuayene.Designer.cs">
+      <DependentUpon>FrmMuayene.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmRandevuListe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmRandevuListe.Designer.cs">
       <DependentUpon>FrmRandevuListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRandevuİptal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRandevuİptal.Designer.cs">
+      <DependentUpon>FrmRandevuİptal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecete.Designer.cs">
+      <DependentUpon>FrmRecete.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSekreterDetay.cs">
       <SubType>Form</SubType>
@@ -160,6 +184,9 @@
     <EmbeddedResource Include="FrmDoktorDetay.resx">
       <DependentUpon>FrmDoktorDetay.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorEkran.resx">
+      <DependentUpon>FrmDoktorEkran.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDoktorGiris.resx">
       <DependentUpon>FrmDoktorGiris.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,8 +214,17 @@
     <EmbeddedResource Include="FrmHastaKayıt.resx">
       <DependentUpon>FrmHastaKayıt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMuayene.resx">
+      <DependentUpon>FrmMuayene.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmRandevuListe.resx">
       <DependentUpon>FrmRandevuListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRandevuİptal.resx">
+      <DependentUpon>FrmRandevuİptal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecete.resx">
+      <DependentUpon>FrmRecete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSekreterDetay.resx">
       <DependentUpon>FrmSekreterDetay.cs</DependentUpon>
@@ -251,6 +287,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\siyah-ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kayıt1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

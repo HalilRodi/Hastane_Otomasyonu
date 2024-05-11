@@ -60,6 +60,7 @@
             this.BtnRandevuiptal.Size = new System.Drawing.Size(232, 55);
             this.BtnRandevuiptal.TabIndex = 2;
             this.BtnRandevuiptal.Text = "Randevu İptal";
+            this.BtnRandevuiptal.Click += new System.EventHandler(this.BtnRandevuiptal_Click);
             // 
             // BtnRandevu
             // 
@@ -164,11 +165,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.LblAdsoyad);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.LblTc);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.MediumAquamarine;
             this.groupBox1.Location = new System.Drawing.Point(643, 149);
             this.groupBox1.Name = "groupBox1";
