@@ -34,7 +34,7 @@ namespace Hastane_Proje
                 SqlDataReader dr = komut.ExecuteReader();
                 if (dr.Read())
                 {
-                    FrmDoktorDetay frmdoktor = new FrmDoktorDetay();
+                    FrmDoktorEkran frmdoktor = new FrmDoktorEkran(MskTc.Text, dr["DoktorAd"].ToString() + " " + dr["DoktorSoyad"].ToString());
                     frmdoktor.doktortc = MskTc.Text;
                     frmdoktor.Show();
                     this.Hide();
@@ -56,6 +56,45 @@ namespace Hastane_Proje
         private void FrmDoktorGiris_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtnGiris_Click_1(object sender, EventArgs e)
+        {
+            if (MskTc.Text == "" || TxtSifre.Text == "" || checkBox1.Checked == false)
+            {
+                MessageBox.Show("Boş alanları lütfen doldurunuz .", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                SqlCommand komut = new SqlCommand("Select * From Tbl_Doktorlar where Doktortc=@p1 and Doktorsifre=@p2", bgldoktor.baglanti());
+                komut.Parameters.AddWithValue("@p1", MskTc.Text);
+                komut.Parameters.AddWithValue("@p2", TxtSifre.Text);
+                SqlDataReader dr = komut.ExecuteReader();
+                if (dr.Read())
+                {
+                    FrmDoktorEkran frmdoktor = new FrmDoktorEkran(MskTc.Text, dr["DoktorAd"].ToString() + " " + dr["DoktorSoyad"].ToString());
+                    frmdoktor.doktortc = MskTc.Text;
+                    frmdoktor.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Tc Kimlik No veya şifre hatalı lütfen tekrar deneyiniz .", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                bgldoktor.baglanti().Close();
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            FrmGirisler frmGirisler = new FrmGirisler();
+            frmGirisler.Show();
+            this.Hide();
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

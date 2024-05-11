@@ -30,7 +30,7 @@
         {
             this.RchSonuc = new System.Windows.Forms.RichTextBox();
             this.LblTeshis = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.Cmbİlac = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Lblilaç = new System.Windows.Forms.Label();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
             this.BtnReceteYaz = new Guna.UI2.WinForms.Guna2Button();
@@ -40,7 +40,7 @@
             // 
             // RchSonuc
             // 
-            this.RchSonuc.Location = new System.Drawing.Point(131, 114);
+            this.RchSonuc.Location = new System.Drawing.Point(236, 166);
             this.RchSonuc.Name = "RchSonuc";
             this.RchSonuc.Size = new System.Drawing.Size(183, 161);
             this.RchSonuc.TabIndex = 0;
@@ -50,38 +50,38 @@
             // 
             this.LblTeshis.AutoSize = true;
             this.LblTeshis.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTeshis.Location = new System.Drawing.Point(57, 114);
+            this.LblTeshis.Location = new System.Drawing.Point(162, 166);
             this.LblTeshis.Name = "LblTeshis";
             this.LblTeshis.Size = new System.Drawing.Size(68, 23);
             this.LblTeshis.TabIndex = 1;
             this.LblTeshis.Text = "Teşhis: ";
             this.LblTeshis.Click += new System.EventHandler(this.LblSonuc_Click);
             // 
-            // guna2ComboBox1
+            // Cmbİlac
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.Empty;
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.FormattingEnabled = true;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(131, 295);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(183, 36);
-            this.guna2ComboBox1.TabIndex = 2;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.Cmbİlac.BackColor = System.Drawing.Color.Transparent;
+            this.Cmbİlac.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Cmbİlac.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cmbİlac.FocusedColor = System.Drawing.Color.Empty;
+            this.Cmbİlac.FocusedState.Parent = this.Cmbİlac;
+            this.Cmbİlac.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Cmbİlac.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.Cmbİlac.FormattingEnabled = true;
+            this.Cmbİlac.HoverState.Parent = this.Cmbİlac;
+            this.Cmbİlac.ItemHeight = 30;
+            this.Cmbİlac.ItemsAppearance.Parent = this.Cmbİlac;
+            this.Cmbİlac.Location = new System.Drawing.Point(236, 352);
+            this.Cmbİlac.Name = "Cmbİlac";
+            this.Cmbİlac.ShadowDecoration.Parent = this.Cmbİlac;
+            this.Cmbİlac.Size = new System.Drawing.Size(183, 36);
+            this.Cmbİlac.TabIndex = 2;
+            this.Cmbİlac.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // Lblilaç
             // 
             this.Lblilaç.AutoSize = true;
             this.Lblilaç.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Lblilaç.Location = new System.Drawing.Point(84, 295);
+            this.Lblilaç.Location = new System.Drawing.Point(174, 352);
             this.Lblilaç.Name = "Lblilaç";
             this.Lblilaç.Size = new System.Drawing.Size(41, 23);
             this.Lblilaç.TabIndex = 1;
@@ -96,7 +96,7 @@
             this.BtnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnClose.ForeColor = System.Drawing.Color.White;
             this.BtnClose.HoverState.Parent = this.BtnClose;
-            this.BtnClose.Location = new System.Drawing.Point(364, 12);
+            this.BtnClose.Location = new System.Drawing.Point(560, 12);
             this.BtnClose.Name = "BtnClose";
             this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
             this.BtnClose.Size = new System.Drawing.Size(43, 28);
@@ -112,7 +112,7 @@
             this.BtnReceteYaz.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnReceteYaz.ForeColor = System.Drawing.Color.White;
             this.BtnReceteYaz.HoverState.Parent = this.BtnReceteYaz;
-            this.BtnReceteYaz.Location = new System.Drawing.Point(227, 377);
+            this.BtnReceteYaz.Location = new System.Drawing.Point(332, 429);
             this.BtnReceteYaz.Name = "BtnReceteYaz";
             this.BtnReceteYaz.ShadowDecoration.Parent = this.BtnReceteYaz;
             this.BtnReceteYaz.Size = new System.Drawing.Size(180, 45);
@@ -136,17 +136,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(419, 434);
+            this.ClientSize = new System.Drawing.Size(615, 552);
             this.Controls.Add(this.BtnReceteYaz);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.guna2CirclePictureBox1);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.Cmbİlac);
             this.Controls.Add(this.Lblilaç);
             this.Controls.Add(this.LblTeshis);
             this.Controls.Add(this.RchSonuc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMuayene";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMuayene";
+            this.Load += new System.EventHandler(this.FrmMuayene_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -157,7 +159,7 @@
 
         private System.Windows.Forms.RichTextBox RchSonuc;
         private System.Windows.Forms.Label LblTeshis;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox Cmbİlac;
         private System.Windows.Forms.Label Lblilaç;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button BtnClose;

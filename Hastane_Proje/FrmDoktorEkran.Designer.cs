@@ -39,6 +39,7 @@
             this.BtnGuncelle = new Guna.UI2.WinForms.Guna2Button();
             this.BtnRandevular = new Guna.UI2.WinForms.Guna2Button();
             this.BtnMuayene = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnDetay = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -116,6 +117,7 @@
             this.BtnCikis.Size = new System.Drawing.Size(160, 48);
             this.BtnCikis.TabIndex = 25;
             this.BtnCikis.Text = "Çıkış Yap";
+            this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
             // 
             // BtnClose
             // 
@@ -131,6 +133,7 @@
             this.BtnClose.Size = new System.Drawing.Size(43, 28);
             this.BtnClose.TabIndex = 24;
             this.BtnClose.Text = "X";
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // guna2CirclePictureBox1
             // 
@@ -155,12 +158,13 @@
             this.BtnGuncelle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnGuncelle.ForeColor = System.Drawing.Color.Black;
             this.BtnGuncelle.HoverState.Parent = this.BtnGuncelle;
-            this.BtnGuncelle.Location = new System.Drawing.Point(135, 406);
+            this.BtnGuncelle.Location = new System.Drawing.Point(135, 357);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.ShadowDecoration.Parent = this.BtnGuncelle;
             this.BtnGuncelle.Size = new System.Drawing.Size(232, 55);
             this.BtnGuncelle.TabIndex = 22;
             this.BtnGuncelle.Text = "Bilgilerimi Güncelle";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnRandevular
             // 
@@ -172,7 +176,7 @@
             this.BtnRandevular.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnRandevular.ForeColor = System.Drawing.Color.Black;
             this.BtnRandevular.HoverState.Parent = this.BtnRandevular;
-            this.BtnRandevular.Location = new System.Drawing.Point(135, 288);
+            this.BtnRandevular.Location = new System.Drawing.Point(135, 278);
             this.BtnRandevular.Name = "BtnRandevular";
             this.BtnRandevular.ShadowDecoration.Parent = this.BtnRandevular;
             this.BtnRandevular.Size = new System.Drawing.Size(232, 55);
@@ -189,12 +193,31 @@
             this.BtnMuayene.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnMuayene.ForeColor = System.Drawing.Color.Black;
             this.BtnMuayene.HoverState.Parent = this.BtnMuayene;
-            this.BtnMuayene.Location = new System.Drawing.Point(135, 180);
+            this.BtnMuayene.Location = new System.Drawing.Point(456, 39);
             this.BtnMuayene.Name = "BtnMuayene";
             this.BtnMuayene.ShadowDecoration.Parent = this.BtnMuayene;
             this.BtnMuayene.Size = new System.Drawing.Size(232, 55);
             this.BtnMuayene.TabIndex = 20;
             this.BtnMuayene.Text = "Muayene Et";
+            this.BtnMuayene.Click += new System.EventHandler(this.BtnMuayene_Click);
+            // 
+            // BtnDetay
+            // 
+            this.BtnDetay.BackColor = System.Drawing.Color.Transparent;
+            this.BtnDetay.BorderRadius = 25;
+            this.BtnDetay.CheckedState.Parent = this.BtnDetay;
+            this.BtnDetay.CustomImages.Parent = this.BtnDetay;
+            this.BtnDetay.FillColor = System.Drawing.Color.White;
+            this.BtnDetay.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnDetay.ForeColor = System.Drawing.Color.Black;
+            this.BtnDetay.HoverState.Parent = this.BtnDetay;
+            this.BtnDetay.Location = new System.Drawing.Point(135, 192);
+            this.BtnDetay.Name = "BtnDetay";
+            this.BtnDetay.ShadowDecoration.Parent = this.BtnDetay;
+            this.BtnDetay.Size = new System.Drawing.Size(232, 55);
+            this.BtnDetay.TabIndex = 27;
+            this.BtnDetay.Text = "Detay";
+            this.BtnDetay.Click += new System.EventHandler(this.BtnDetay_Click);
             // 
             // FrmDoktorEkran
             // 
@@ -202,6 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Hastane_Proje.Properties.Resources.Kayıt1;
             this.ClientSize = new System.Drawing.Size(1131, 572);
+            this.Controls.Add(this.BtnDetay);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BtnCikis);
             this.Controls.Add(this.BtnClose);
@@ -211,7 +235,9 @@
             this.Controls.Add(this.BtnMuayene);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDoktorEkran";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDoktorEkran";
+            this.Load += new System.EventHandler(this.FrmDoktorEkran_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
@@ -232,5 +258,6 @@
         private Guna.UI2.WinForms.Guna2Button BtnGuncelle;
         private Guna.UI2.WinForms.Guna2Button BtnRandevular;
         private Guna.UI2.WinForms.Guna2Button BtnMuayene;
+        private Guna.UI2.WinForms.Guna2Button BtnDetay;
     }
 }
