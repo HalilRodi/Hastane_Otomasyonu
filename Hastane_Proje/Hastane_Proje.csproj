@@ -291,5 +291,14 @@
   <ItemGroup>
     <None Include="Resources\Kayıt1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adsız tasarım.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dokto grs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sekreter grs.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

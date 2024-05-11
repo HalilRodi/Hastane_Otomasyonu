@@ -20,9 +20,22 @@ namespace Hastane_Proje
 
         sqlbaglanti bglsekreter = new sqlbaglanti();
 
-        private void BtnGiris_Click(object sender, EventArgs e)
+        
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-           if(MskTc.Text == "" || TxtSifre.Text == "" )
+            Form1 frmcaptcha = new Form1();
+            frmcaptcha.Show();
+        }
+
+        private void FrmSekreterGiris_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnGiris_Click_1(object sender, EventArgs e)
+        {
+            if (MskTc.Text == "" || TxtSifre.Text == "")
             {
                 MessageBox.Show("Boş kalan alanları lütfen doldurunuz .", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -47,15 +60,22 @@ namespace Hastane_Proje
             }
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Form1 frmcaptcha = new Form1();
-            frmcaptcha.Show();
+
         }
 
-        private void FrmSekreterGiris_Load(object sender, EventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
+            Application.Exit();
 
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            FrmGirisler frmGirisler = new FrmGirisler();
+            frmGirisler.Show();
+            this.Hide();
         }
     }
 }

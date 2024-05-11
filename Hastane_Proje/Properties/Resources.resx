@@ -118,37 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="siyah-ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\siyah-ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="a2a9fd76-ffbc-4b0b-843f-11e78f740c69" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\a2a9fd76-ffbc-4b0b-843f-11e78f740c69.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kayıt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kayıt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="49057b6b-8776-46b5-ab74-174403ff5913" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\49057b6b-8776-46b5-ab74-174403ff5913.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="49057b6b-8776-46b5-ab74-174403ff59131" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\49057b6b-8776-46b5-ab74-174403ff59131.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kayıt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kayıt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-left-arrow-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-left-arrow-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="WhatsApp Görsel 2024-05-05 saat 19.36.52_9f0c4111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Görsel 2024-05-05 saat 19.36.52_9f0c4111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="siyah-ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\siyah-ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="HOSPITAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HOSPITAL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="49057b6b-8776-46b5-ab74-174403ff5913" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\49057b6b-8776-46b5-ab74-174403ff5913.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a2a9fd76-ffbc-4b0b-843f-11e78f740c69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a2a9fd76-ffbc-4b0b-843f-11e78f740c69.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dokto grs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dokto grs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kayıt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kayıt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adsız tasarım" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adsız tasarım.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-left-arrow-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-left-arrow-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Görsel 2024-05-05 saat 19.36.52_9f0c4111" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Görsel 2024-05-05 saat 19.36.52_9f0c4111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Kayıt1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kayıt1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sekreter grs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sekreter grs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

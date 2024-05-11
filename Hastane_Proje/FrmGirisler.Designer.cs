@@ -37,8 +37,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -50,9 +50,9 @@
             this.BtnHasta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnHasta.FlatAppearance.BorderSize = 0;
             this.BtnHasta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnHasta.Location = new System.Drawing.Point(146, 354);
+            this.BtnHasta.Location = new System.Drawing.Point(146, 336);
             this.BtnHasta.Name = "BtnHasta";
-            this.BtnHasta.Size = new System.Drawing.Size(237, 239);
+            this.BtnHasta.Size = new System.Drawing.Size(246, 257);
             this.BtnHasta.TabIndex = 5;
             this.BtnHasta.UseVisualStyleBackColor = false;
             this.BtnHasta.Click += new System.EventHandler(this.button1_Click);
@@ -64,9 +64,9 @@
             this.BtnDoktor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnDoktor.FlatAppearance.BorderSize = 0;
             this.BtnDoktor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDoktor.Location = new System.Drawing.Point(398, 351);
+            this.BtnDoktor.Location = new System.Drawing.Point(398, 336);
             this.BtnDoktor.Name = "BtnDoktor";
-            this.BtnDoktor.Size = new System.Drawing.Size(237, 242);
+            this.BtnDoktor.Size = new System.Drawing.Size(237, 257);
             this.BtnDoktor.TabIndex = 6;
             this.BtnDoktor.UseVisualStyleBackColor = false;
             this.BtnDoktor.Click += new System.EventHandler(this.BtnDoktor_Click);
@@ -78,9 +78,9 @@
             this.BtnSekreter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnSekreter.FlatAppearance.BorderSize = 0;
             this.BtnSekreter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSekreter.Location = new System.Drawing.Point(650, 354);
+            this.BtnSekreter.Location = new System.Drawing.Point(641, 322);
             this.BtnSekreter.Name = "BtnSekreter";
-            this.BtnSekreter.Size = new System.Drawing.Size(237, 239);
+            this.BtnSekreter.Size = new System.Drawing.Size(275, 283);
             this.BtnSekreter.TabIndex = 7;
             this.BtnSekreter.UseVisualStyleBackColor = false;
             this.BtnSekreter.Click += new System.EventHandler(this.BtnSekreter_Click);
@@ -124,7 +124,7 @@
             this.pictureBox1.Image = global::Hastane_Proje.Properties.Resources._49057b6b_8776_46b5_ab74_174403ff5913;
             this.pictureBox1.Location = new System.Drawing.Point(413, 74);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(206, 192);
+            this.pictureBox1.Size = new System.Drawing.Size(194, 184);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
@@ -139,18 +139,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1027, 52);
             this.panel2.TabIndex = 14;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(12, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(264, 33);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Hastane Bilgi Sistemi";
             // 
             // guna2Button1
             // 
@@ -167,6 +155,18 @@
             this.guna2Button1.TabIndex = 18;
             this.guna2Button1.Text = "X";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Corbel", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(12, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(264, 33);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Hastane Bilgi Sistemi";
             // 
             // FrmGirisler
             // 

@@ -58,6 +58,20 @@ namespace Hastane_Proje
 
         }
 
+       
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            FrmGirisler frmGirisler = new FrmGirisler();
+            frmGirisler.Show();
+            this.Hide();
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void BtnGiris_Click_1(object sender, EventArgs e)
         {
             if (MskTc.Text == "" || TxtSifre.Text == "" || checkBox1.Checked == false)
@@ -83,18 +97,6 @@ namespace Hastane_Proje
                 }
                 bgldoktor.baglanti().Close();
             }
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            FrmGirisler frmGirisler = new FrmGirisler();
-            frmGirisler.Show();
-            this.Hide();
-        }
-
-        private void BtnClose_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

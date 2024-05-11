@@ -103,6 +103,26 @@ namespace Hastane_Proje.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap Adsız_tasarım {
+            get {
+                object obj = ResourceManager.GetObject("Adsız tasarım", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap dokto_grs {
+            get {
+                object obj = ResourceManager.GetObject("dokto grs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap HOSPITAL {
             get {
                 object obj = ResourceManager.GetObject("HOSPITAL", resourceCulture);
@@ -146,6 +166,16 @@ namespace Hastane_Proje.Properties {
         internal static System.Drawing.Bitmap Kayıt1 {
             get {
                 object obj = ResourceManager.GetObject("Kayıt1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap sekreter_grs {
+            get {
+                object obj = ResourceManager.GetObject("sekreter grs", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnGiris = new System.Windows.Forms.Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnGiris = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // checkBox1
@@ -44,7 +44,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox1.Location = new System.Drawing.Point(344, 310);
+            this.checkBox1.Location = new System.Drawing.Point(224, 327);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(106, 23);
             this.checkBox1.TabIndex = 14;
@@ -55,7 +55,7 @@
             // TxtSifre
             // 
             this.TxtSifre.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtSifre.Location = new System.Drawing.Point(343, 260);
+            this.TxtSifre.Location = new System.Drawing.Point(223, 277);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(162, 33);
             this.TxtSifre.TabIndex = 12;
@@ -64,7 +64,7 @@
             // MskTc
             // 
             this.MskTc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTc.Location = new System.Drawing.Point(343, 206);
+            this.MskTc.Location = new System.Drawing.Point(223, 223);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(162, 35);
@@ -76,7 +76,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(269, 264);
+            this.label2.Location = new System.Drawing.Point(149, 281);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 10;
@@ -87,7 +87,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(183, 212);
+            this.label1.Location = new System.Drawing.Point(63, 229);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 9;
@@ -97,7 +97,7 @@
             // 
             this.BtnClose.CheckedState.Parent = this.BtnClose;
             this.BtnClose.CustomImages.Parent = this.BtnClose;
-            this.BtnClose.FillColor = System.Drawing.Color.Red;
+            this.BtnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
             this.BtnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnClose.ForeColor = System.Drawing.Color.White;
             this.BtnClose.HoverState.Parent = this.BtnClose;
@@ -108,19 +108,6 @@
             this.BtnClose.TabIndex = 18;
             this.BtnClose.Text = "X";
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
-            // 
-            // BtnGiris
-            // 
-            this.BtnGiris.BackColor = System.Drawing.Color.White;
-            this.BtnGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGiris.ForeColor = System.Drawing.Color.Black;
-            this.BtnGiris.Location = new System.Drawing.Point(217, 376);
-            this.BtnGiris.Name = "BtnGiris";
-            this.BtnGiris.Size = new System.Drawing.Size(318, 62);
-            this.BtnGiris.TabIndex = 19;
-            this.BtnGiris.Text = "Giriş Yap";
-            this.BtnGiris.UseVisualStyleBackColor = false;
-            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click_1);
             // 
             // guna2Button1
             // 
@@ -140,16 +127,34 @@
             this.guna2Button1.TabIndex = 20;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // BtnGiris
+            // 
+            this.BtnGiris.BackColor = System.Drawing.Color.Transparent;
+            this.BtnGiris.BorderRadius = 25;
+            this.BtnGiris.CheckedState.Parent = this.BtnGiris;
+            this.BtnGiris.CustomImages.Parent = this.BtnGiris;
+            this.BtnGiris.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
+            this.BtnGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.BtnGiris.ForeColor = System.Drawing.Color.Black;
+            this.BtnGiris.HoverState.Parent = this.BtnGiris;
+            this.BtnGiris.Location = new System.Drawing.Point(223, 374);
+            this.BtnGiris.Name = "BtnGiris";
+            this.BtnGiris.ShadowDecoration.Parent = this.BtnGiris;
+            this.BtnGiris.Size = new System.Drawing.Size(162, 54);
+            this.BtnGiris.TabIndex = 21;
+            this.BtnGiris.Text = "Giriş Yap";
+            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click_1);
+            // 
             // FrmDoktorGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.HOSPITAL;
+            this.BackgroundImage = global::Hastane_Proje.Properties.Resources.dokto_grs;
             this.ClientSize = new System.Drawing.Size(751, 540);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnGiris);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.TxtSifre);
@@ -178,7 +183,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button BtnClose;
-        private System.Windows.Forms.Button BtnGiris;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button BtnGiris;
     }
 }
