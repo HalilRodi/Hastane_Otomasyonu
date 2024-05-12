@@ -62,10 +62,10 @@
             // LblAdsoyad
             // 
             this.LblAdsoyad.AutoSize = true;
-            this.LblAdsoyad.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAdsoyad.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblAdsoyad.Location = new System.Drawing.Point(186, 51);
             this.LblAdsoyad.Name = "LblAdsoyad";
-            this.LblAdsoyad.Size = new System.Drawing.Size(53, 23);
+            this.LblAdsoyad.Size = new System.Drawing.Size(44, 23);
             this.LblAdsoyad.TabIndex = 11;
             this.LblAdsoyad.Text = "Null";
             // 
@@ -82,11 +82,11 @@
             // LblTc
             // 
             this.LblTc.AutoSize = true;
-            this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTc.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblTc.ForeColor = System.Drawing.Color.Black;
             this.LblTc.Location = new System.Drawing.Point(186, 91);
             this.LblTc.Name = "LblTc";
-            this.LblTc.Size = new System.Drawing.Size(153, 23);
+            this.LblTc.Size = new System.Drawing.Size(120, 23);
             this.LblTc.TabIndex = 9;
             this.LblTc.Text = "00000000000";
             // 
@@ -197,7 +197,7 @@
             this.BtnDetay.ShadowDecoration.Parent = this.BtnDetay;
             this.BtnDetay.Size = new System.Drawing.Size(232, 55);
             this.BtnDetay.TabIndex = 27;
-            this.BtnDetay.Text = "Detay";
+            this.BtnDetay.Text = "Muayene";
             this.BtnDetay.Click += new System.EventHandler(this.BtnDetay_Click);
             // 
             // FrmDoktorEkran

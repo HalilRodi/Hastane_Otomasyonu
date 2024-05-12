@@ -50,11 +50,7 @@ namespace Hastane_Proje
 
         }
 
-        private void BtnDuyuru_Click(object sender, EventArgs e)
-        {
-            FrmMuayene frm = new FrmMuayene();
-            frm.Show();
-        }
+        
 
         // şikayetleri richtextboxa çekme
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

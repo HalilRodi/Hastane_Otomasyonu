@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnRandevuiptal = new Guna.UI2.WinForms.Guna2Button();
             this.BtnRandevu = new Guna.UI2.WinForms.Guna2Button();
             this.BtnRandevular = new Guna.UI2.WinForms.Guna2Button();
             this.BtnGuncelle = new Guna.UI2.WinForms.Guna2Button();
@@ -43,24 +42,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // BtnRandevuiptal
-            // 
-            this.BtnRandevuiptal.BackColor = System.Drawing.Color.Transparent;
-            this.BtnRandevuiptal.BorderRadius = 25;
-            this.BtnRandevuiptal.CheckedState.Parent = this.BtnRandevuiptal;
-            this.BtnRandevuiptal.CustomImages.Parent = this.BtnRandevuiptal;
-            this.BtnRandevuiptal.FillColor = System.Drawing.Color.White;
-            this.BtnRandevuiptal.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.BtnRandevuiptal.ForeColor = System.Drawing.Color.Black;
-            this.BtnRandevuiptal.HoverState.Parent = this.BtnRandevuiptal;
-            this.BtnRandevuiptal.Location = new System.Drawing.Point(143, 261);
-            this.BtnRandevuiptal.Name = "BtnRandevuiptal";
-            this.BtnRandevuiptal.ShadowDecoration.Parent = this.BtnRandevuiptal;
-            this.BtnRandevuiptal.Size = new System.Drawing.Size(232, 55);
-            this.BtnRandevuiptal.TabIndex = 2;
-            this.BtnRandevuiptal.Text = "Randevu İptal";
-            this.BtnRandevuiptal.Click += new System.EventHandler(this.BtnRandevuiptal_Click);
             // 
             // BtnRandevu
             // 
@@ -90,7 +71,7 @@
             this.BtnRandevular.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnRandevular.ForeColor = System.Drawing.Color.Black;
             this.BtnRandevular.HoverState.Parent = this.BtnRandevular;
-            this.BtnRandevular.Location = new System.Drawing.Point(143, 342);
+            this.BtnRandevular.Location = new System.Drawing.Point(143, 278);
             this.BtnRandevular.Name = "BtnRandevular";
             this.BtnRandevular.ShadowDecoration.Parent = this.BtnRandevular;
             this.BtnRandevular.Size = new System.Drawing.Size(232, 55);
@@ -108,7 +89,7 @@
             this.BtnGuncelle.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnGuncelle.ForeColor = System.Drawing.Color.Black;
             this.BtnGuncelle.HoverState.Parent = this.BtnGuncelle;
-            this.BtnGuncelle.Location = new System.Drawing.Point(143, 414);
+            this.BtnGuncelle.Location = new System.Drawing.Point(143, 366);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.ShadowDecoration.Parent = this.BtnGuncelle;
             this.BtnGuncelle.Size = new System.Drawing.Size(232, 55);
@@ -172,7 +153,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(733, 99);
+            this.groupBox1.Location = new System.Drawing.Point(677, 138);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(372, 167);
             this.groupBox1.TabIndex = 18;
@@ -183,13 +164,13 @@
             // LblAdsoyad
             // 
             this.LblAdsoyad.AutoSize = true;
-            this.LblAdsoyad.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAdsoyad.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblAdsoyad.ForeColor = System.Drawing.Color.Black;
             this.LblAdsoyad.Location = new System.Drawing.Point(186, 51);
             this.LblAdsoyad.Name = "LblAdsoyad";
-            this.LblAdsoyad.Size = new System.Drawing.Size(104, 23);
+            this.LblAdsoyad.Size = new System.Drawing.Size(57, 23);
             this.LblAdsoyad.TabIndex = 11;
-            this.LblAdsoyad.Text = "Elif Çiçek";
+            this.LblAdsoyad.Text = "NULL";
             // 
             // label3
             // 
@@ -205,13 +186,13 @@
             // LblTc
             // 
             this.LblTc.AutoSize = true;
-            this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTc.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.LblTc.ForeColor = System.Drawing.Color.Black;
             this.LblTc.Location = new System.Drawing.Point(186, 91);
             this.LblTc.Name = "LblTc";
-            this.LblTc.Size = new System.Drawing.Size(138, 23);
+            this.LblTc.Size = new System.Drawing.Size(120, 23);
             this.LblTc.TabIndex = 9;
-            this.LblTc.Text = "15248632578";
+            this.LblTc.Text = "00000000000";
             // 
             // label1
             // 
@@ -238,7 +219,6 @@
             this.Controls.Add(this.BtnGuncelle);
             this.Controls.Add(this.BtnRandevular);
             this.Controls.Add(this.BtnRandevu);
-            this.Controls.Add(this.BtnRandevuiptal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HastaEkran";
             this.Text = "HastaEkran";
@@ -251,7 +231,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Button BtnRandevuiptal;
         private Guna.UI2.WinForms.Guna2Button BtnRandevu;
         private Guna.UI2.WinForms.Guna2Button BtnRandevular;
         private Guna.UI2.WinForms.Guna2Button BtnGuncelle;

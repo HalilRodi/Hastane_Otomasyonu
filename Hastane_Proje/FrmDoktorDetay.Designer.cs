@@ -36,7 +36,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.BtnMuayene = new System.Windows.Forms.Button();
-            this.BtnDuyuru = new System.Windows.Forms.Button();
             this.BtnBilgiDuzenle = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblAdsoyad = new System.Windows.Forms.Label();
@@ -53,9 +52,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.RchSikayet);
-            this.groupBox2.ForeColor = System.Drawing.Color.BlueViolet;
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(12, 393);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(372, 272);
@@ -75,9 +74,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.ForeColor = System.Drawing.Color.BlueViolet;
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
             this.groupBox3.Location = new System.Drawing.Point(391, 48);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(867, 618);
@@ -92,7 +91,7 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.PapayaWhip;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.BlueViolet;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -107,11 +106,10 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox4.BackColor = System.Drawing.Color.White;
             this.groupBox4.Controls.Add(this.BtnMuayene);
-            this.groupBox4.Controls.Add(this.BtnDuyuru);
             this.groupBox4.Controls.Add(this.BtnBilgiDuzenle);
-            this.groupBox4.ForeColor = System.Drawing.Color.BlueViolet;
+            this.groupBox4.ForeColor = System.Drawing.Color.Black;
             this.groupBox4.Location = new System.Drawing.Point(12, 220);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(372, 167);
@@ -124,33 +122,19 @@
             this.BtnMuayene.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.BtnMuayene.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnMuayene.ForeColor = System.Drawing.Color.White;
-            this.BtnMuayene.Location = new System.Drawing.Point(190, 41);
+            this.BtnMuayene.Location = new System.Drawing.Point(195, 66);
             this.BtnMuayene.Name = "BtnMuayene";
             this.BtnMuayene.Size = new System.Drawing.Size(150, 48);
             this.BtnMuayene.TabIndex = 20;
             this.BtnMuayene.Text = "Muayene Et";
             this.BtnMuayene.UseVisualStyleBackColor = false;
-            this.BtnMuayene.Click += new System.EventHandler(this.BtnDuyuru_Click);
-            // 
-            // BtnDuyuru
-            // 
-            this.BtnDuyuru.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.BtnDuyuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnDuyuru.ForeColor = System.Drawing.Color.White;
-            this.BtnDuyuru.Location = new System.Drawing.Point(111, 95);
-            this.BtnDuyuru.Name = "BtnDuyuru";
-            this.BtnDuyuru.Size = new System.Drawing.Size(150, 48);
-            this.BtnDuyuru.TabIndex = 20;
-            this.BtnDuyuru.Text = "Duyurular";
-            this.BtnDuyuru.UseVisualStyleBackColor = false;
-            this.BtnDuyuru.Click += new System.EventHandler(this.BtnDuyuru_Click);
             // 
             // BtnBilgiDuzenle
             // 
             this.BtnBilgiDuzenle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.BtnBilgiDuzenle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnBilgiDuzenle.ForeColor = System.Drawing.Color.White;
-            this.BtnBilgiDuzenle.Location = new System.Drawing.Point(32, 41);
+            this.BtnBilgiDuzenle.Location = new System.Drawing.Point(37, 66);
             this.BtnBilgiDuzenle.Name = "BtnBilgiDuzenle";
             this.BtnBilgiDuzenle.Size = new System.Drawing.Size(150, 48);
             this.BtnBilgiDuzenle.TabIndex = 19;
@@ -159,13 +143,13 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.LblAdsoyad);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.LblTc);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.ForeColor = System.Drawing.Color.MediumAquamarine;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(13, 48);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(372, 167);
@@ -177,6 +161,7 @@
             // 
             this.LblAdsoyad.AutoSize = true;
             this.LblAdsoyad.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAdsoyad.ForeColor = System.Drawing.Color.Black;
             this.LblAdsoyad.Location = new System.Drawing.Point(186, 51);
             this.LblAdsoyad.Name = "LblAdsoyad";
             this.LblAdsoyad.Size = new System.Drawing.Size(41, 23);
@@ -197,7 +182,7 @@
             // 
             this.LblTc.AutoSize = true;
             this.LblTc.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTc.ForeColor = System.Drawing.Color.MediumSpringGreen;
+            this.LblTc.ForeColor = System.Drawing.Color.Black;
             this.LblTc.Location = new System.Drawing.Point(186, 91);
             this.LblTc.Name = "LblTc";
             this.LblTc.Size = new System.Drawing.Size(120, 23);
@@ -267,7 +252,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.RichTextBox RchSikayet;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button BtnDuyuru;
         private System.Windows.Forms.Button BtnBilgiDuzenle;
         private System.Windows.Forms.Button BtnMuayene;
         private System.Windows.Forms.GroupBox groupBox1;

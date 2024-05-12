@@ -145,23 +145,6 @@ namespace Hastane_Proje
             bgl.baglanti().Close();
         }
 
-        private void BtnOluştur_Click(object sender, EventArgs e)
-        {
-            if (RchDuyuru.Text == "")
-            {
-                MessageBox.Show("Lütfen metin giriniz .", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                SqlCommand komut = new SqlCommand("insert into Tbl_Duyurular (Duyuru) values (@d1)", bgl.baglanti());
-                komut.Parameters.AddWithValue("@d1", RchDuyuru.Text);
-                komut.ExecuteNonQuery();
-                bgl.baglanti().Close();
-                MessageBox.Show("Duyuru oluşturuldu .", "Tebrikler", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                RchDuyuru.Text = "";
-            }
-        }
-
         private void BtnDoktorPanel_Click(object sender, EventArgs e)
         {
             FrmDoktorPanel frm = new FrmDoktorPanel();

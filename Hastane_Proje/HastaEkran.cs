@@ -80,12 +80,6 @@ namespace Hastane_Proje
             this.Hide();
         }
 
-        private void BtnRandevuiptal_Click(object sender, EventArgs e)
-        {
-            FrmRandevuİptal frmRandevuİptal = new FrmRandevuİptal();
-            frmRandevuİptal.hastatc = LblTc.Text;
-            frmRandevuİptal.Show();
-            this.Hide();
-        }
+        
     }
 }

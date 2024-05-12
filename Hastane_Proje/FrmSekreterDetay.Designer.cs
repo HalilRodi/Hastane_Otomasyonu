@@ -32,16 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSekreterDetay));
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblAdsoyad = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.LblTc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.RchDuyuru = new System.Windows.Forms.RichTextBox();
-            this.BtnOluştur = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.MskSaat = new System.Windows.Forms.MaskedTextBox();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
@@ -59,12 +54,12 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.BtnDuyuru = new System.Windows.Forms.Button();
             this.BtnRandevuListe = new System.Windows.Forms.Button();
             this.BtnBranşPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
+            this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -73,33 +68,15 @@
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 665);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1270, 30);
-            this.panel2.TabIndex = 14;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1270, 25);
-            this.panel1.TabIndex = 15;
-            // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.LblAdsoyad);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.LblTc);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.ForeColor = System.Drawing.Color.Tomato;
-            this.groupBox1.Location = new System.Drawing.Point(7, 36);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(12, 58);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(372, 167);
             this.groupBox1.TabIndex = 16;
@@ -110,6 +87,7 @@
             // 
             this.LblAdsoyad.AutoSize = true;
             this.LblAdsoyad.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblAdsoyad.ForeColor = System.Drawing.Color.Black;
             this.LblAdsoyad.Location = new System.Drawing.Point(186, 51);
             this.LblAdsoyad.Name = "LblAdsoyad";
             this.LblAdsoyad.Size = new System.Drawing.Size(53, 23);
@@ -120,6 +98,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(74, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 23);
@@ -130,6 +109,7 @@
             // 
             this.LblTc.AutoSize = true;
             this.LblTc.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTc.ForeColor = System.Drawing.Color.Black;
             this.LblTc.Location = new System.Drawing.Point(186, 91);
             this.LblTc.Name = "LblTc";
             this.LblTc.Size = new System.Drawing.Size(153, 23);
@@ -140,50 +120,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(32, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 8;
             this.label1.Text = "TC Kimlik No :";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.groupBox2.Controls.Add(this.RchDuyuru);
-            this.groupBox2.Controls.Add(this.BtnOluştur);
-            this.groupBox2.ForeColor = System.Drawing.Color.Tomato;
-            this.groupBox2.Location = new System.Drawing.Point(7, 209);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(372, 445);
-            this.groupBox2.TabIndex = 13;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Duyuru Oluşturma Paneli";
-            // 
-            // RchDuyuru
-            // 
-            this.RchDuyuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RchDuyuru.Location = new System.Drawing.Point(4, 28);
-            this.RchDuyuru.Name = "RchDuyuru";
-            this.RchDuyuru.Size = new System.Drawing.Size(362, 321);
-            this.RchDuyuru.TabIndex = 19;
-            this.RchDuyuru.Text = "";
-            // 
-            // BtnOluştur
-            // 
-            this.BtnOluştur.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.BtnOluştur.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnOluştur.ForeColor = System.Drawing.Color.Tomato;
-            this.BtnOluştur.Location = new System.Drawing.Point(31, 366);
-            this.BtnOluştur.Name = "BtnOluştur";
-            this.BtnOluştur.Size = new System.Drawing.Size(307, 57);
-            this.BtnOluştur.TabIndex = 18;
-            this.BtnOluştur.Text = "Oluştur";
-            this.BtnOluştur.UseVisualStyleBackColor = false;
-            this.BtnOluştur.Click += new System.EventHandler(this.BtnOluştur_Click);
-            // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.MskSaat);
             this.groupBox3.Controls.Add(this.CmbDoktor);
             this.groupBox3.Controls.Add(this.CmbBrans);
@@ -195,8 +141,8 @@
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.BtnKaydet);
-            this.groupBox3.ForeColor = System.Drawing.Color.Tomato;
-            this.groupBox3.Location = new System.Drawing.Point(383, 36);
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
+            this.groupBox3.Location = new System.Drawing.Point(388, 58);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(372, 434);
             this.groupBox3.TabIndex = 20;
@@ -304,7 +250,7 @@
             // 
             this.BtnKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.BtnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnKaydet.ForeColor = System.Drawing.Color.Tomato;
+            this.BtnKaydet.ForeColor = System.Drawing.Color.White;
             this.BtnKaydet.Location = new System.Drawing.Point(30, 312);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(315, 64);
@@ -315,12 +261,12 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox4.BackColor = System.Drawing.Color.White;
             this.groupBox4.Controls.Add(this.dataGridView1);
-            this.groupBox4.ForeColor = System.Drawing.Color.Tomato;
-            this.groupBox4.Location = new System.Drawing.Point(760, 36);
+            this.groupBox4.ForeColor = System.Drawing.Color.Black;
+            this.groupBox4.Location = new System.Drawing.Point(769, 58);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(505, 310);
+            this.groupBox4.Size = new System.Drawing.Size(490, 310);
             this.groupBox4.TabIndex = 21;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Branşlar";
@@ -340,7 +286,7 @@
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.PapayaWhip;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Tomato;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -348,17 +294,17 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 25);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(499, 282);
+            this.dataGridView1.Size = new System.Drawing.Size(484, 282);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox5
             // 
-            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
+            this.groupBox5.BackColor = System.Drawing.Color.White;
             this.groupBox5.Controls.Add(this.dataGridView2);
-            this.groupBox5.ForeColor = System.Drawing.Color.Tomato;
-            this.groupBox5.Location = new System.Drawing.Point(760, 352);
+            this.groupBox5.ForeColor = System.Drawing.Color.Black;
+            this.groupBox5.Location = new System.Drawing.Point(769, 374);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(505, 302);
+            this.groupBox5.Size = new System.Drawing.Size(490, 302);
             this.groupBox5.TabIndex = 22;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Doktorlar";
@@ -370,7 +316,7 @@
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.PapayaWhip;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Tomato;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -378,43 +324,29 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(3, 25);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(499, 274);
+            this.dataGridView2.Size = new System.Drawing.Size(484, 274);
             this.dataGridView2.TabIndex = 0;
             // 
             // groupBox6
             // 
-            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(66)))), ((int)(((byte)(66)))));
-            this.groupBox6.Controls.Add(this.BtnDuyuru);
+            this.groupBox6.BackColor = System.Drawing.Color.White;
             this.groupBox6.Controls.Add(this.BtnRandevuListe);
             this.groupBox6.Controls.Add(this.BtnBranşPanel);
             this.groupBox6.Controls.Add(this.BtnDoktorPanel);
-            this.groupBox6.ForeColor = System.Drawing.Color.Tomato;
-            this.groupBox6.Location = new System.Drawing.Point(383, 473);
+            this.groupBox6.ForeColor = System.Drawing.Color.Black;
+            this.groupBox6.Location = new System.Drawing.Point(12, 238);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(372, 181);
             this.groupBox6.TabIndex = 23;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
-            // BtnDuyuru
-            // 
-            this.BtnDuyuru.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.BtnDuyuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnDuyuru.ForeColor = System.Drawing.Color.White;
-            this.BtnDuyuru.Location = new System.Drawing.Point(188, 109);
-            this.BtnDuyuru.Name = "BtnDuyuru";
-            this.BtnDuyuru.Size = new System.Drawing.Size(149, 47);
-            this.BtnDuyuru.TabIndex = 36;
-            this.BtnDuyuru.Text = "Duyurular";
-            this.BtnDuyuru.UseVisualStyleBackColor = false;
-            this.BtnDuyuru.Click += new System.EventHandler(this.BtnDuyuru_Click);
-            // 
             // BtnRandevuListe
             // 
             this.BtnRandevuListe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.BtnRandevuListe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnRandevuListe.ForeColor = System.Drawing.Color.White;
-            this.BtnRandevuListe.Location = new System.Drawing.Point(27, 109);
+            this.BtnRandevuListe.Location = new System.Drawing.Point(104, 105);
             this.BtnRandevuListe.Name = "BtnRandevuListe";
             this.BtnRandevuListe.Size = new System.Drawing.Size(149, 47);
             this.BtnRandevuListe.TabIndex = 35;
@@ -448,23 +380,55 @@
             this.BtnDoktorPanel.UseVisualStyleBackColor = false;
             this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
+            // BtnClose
+            // 
+            this.BtnClose.CheckedState.Parent = this.BtnClose;
+            this.BtnClose.CustomImages.Parent = this.BtnClose;
+            this.BtnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(43)))), ((int)(((byte)(49)))));
+            this.BtnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnClose.ForeColor = System.Drawing.Color.White;
+            this.BtnClose.HoverState.Parent = this.BtnClose;
+            this.BtnClose.Location = new System.Drawing.Point(1215, 12);
+            this.BtnClose.Name = "BtnClose";
+            this.BtnClose.ShadowDecoration.Parent = this.BtnClose;
+            this.BtnClose.Size = new System.Drawing.Size(43, 28);
+            this.BtnClose.TabIndex = 24;
+            this.BtnClose.Text = "X";
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BackgroundImage = global::Hastane_Proje.Properties.Resources.icons8_left_arrow_481;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(12, 12);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(51, 36);
+            this.guna2Button1.TabIndex = 25;
+            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1270, 695);
+            this.ClientSize = new System.Drawing.Size(1271, 695);
+            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximizeBox = false;
@@ -474,7 +438,6 @@
             this.Load += new System.EventHandler(this.FrmSekreterDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -487,17 +450,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label LblAdsoyad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LblTc;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button BtnOluştur;
-        private System.Windows.Forms.RichTextBox RchDuyuru;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.Label label4;
@@ -518,6 +475,7 @@
         private System.Windows.Forms.Button BtnRandevuListe;
         private System.Windows.Forms.Button BtnBranşPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
-        private System.Windows.Forms.Button BtnDuyuru;
+        private Guna.UI2.WinForms.Guna2Button BtnClose;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
