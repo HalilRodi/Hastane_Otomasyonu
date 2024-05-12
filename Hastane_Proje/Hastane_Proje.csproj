@@ -321,5 +321,8 @@
   <ItemGroup>
     <None Include="Resources\doktor ana ekran1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REÇETE.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

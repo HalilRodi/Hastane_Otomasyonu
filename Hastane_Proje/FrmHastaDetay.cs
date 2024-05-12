@@ -129,12 +129,13 @@ namespace Hastane_Proje
             }
 
             // Insert the new appointment
-            SqlCommand kaydet = new SqlCommand("INSERT INTO Tbl_Randevular (HastaTC, RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor) VALUES (@p1, @p2, @p3, @p4, @p5)", bgldetay.baglanti());
+            SqlCommand kaydet = new SqlCommand("INSERT INTO Tbl_Randevular (HastaTC, RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor, HastaSikayet) VALUES (@p1, @p2, @p3, @p4, @p5, @p6)", bgldetay.baglanti());
             kaydet.Parameters.AddWithValue("@p1", LblTc.Text);
             kaydet.Parameters.AddWithValue("@p2", formattedDate); // Use the formatted date
             kaydet.Parameters.AddWithValue("@p3", randevuSaat);
             kaydet.Parameters.AddWithValue("@p4", CmbBrans.Text);
             kaydet.Parameters.AddWithValue("@p5", CmbDoktor.Text);
+            kaydet.Parameters.AddWithValue("@p6", RchSikayet.Text);
             kaydet.ExecuteNonQuery();
             bgldetay.baglanti().Close();
 

@@ -61,7 +61,31 @@ namespace Hastane_Proje
 
         private void BtnClose_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
+
+        private void BtnBilgiDuzenle_Click(object sender, EventArgs e)
+        {
+            FrmDoktorGuncelle frmDoktorGuncelle =new FrmDoktorGuncelle();
+            frmDoktorGuncelle.doktortc = LblTc.Text;
+            frmDoktorGuncelle.Show();
+        }
+
+        private void BtnMuayene_Click(object sender, EventArgs e)
+        {
+            FrmMuayene frmMuayene =new FrmMuayene();
+            frmMuayene.Show();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
             Close();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int sikayet = dataGridView1.SelectedCells[0].RowIndex;
+            RchSikayet.Text = dataGridView1.Rows[sikayet].Cells[7].Value.ToString();
         }
     }
 }

@@ -37,6 +37,12 @@ namespace Hastane_Proje
 
         private void BtnReceteYaz_Click(object sender, EventArgs e)
         {
+            SqlCommand kaydet = new SqlCommand("INSERT INTO Tbl_Muayene (Teşhis, İlaçAdı) VALUES (@p1, @p2)", bgl.baglanti());
+            kaydet.Parameters.AddWithValue("@p1", RchSonuc.Text);
+            kaydet.Parameters.AddWithValue("@p2", Cmbİlac.Text);
+            kaydet.ExecuteNonQuery();
+            bgl.baglanti().Close();
+
             FrmRecete frmRecete = new FrmRecete();
             frmRecete.Show();
         }
@@ -54,5 +60,7 @@ namespace Hastane_Proje
             
             
         }
+
+       
     }
 }

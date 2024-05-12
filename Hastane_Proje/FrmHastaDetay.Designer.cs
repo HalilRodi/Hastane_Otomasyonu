@@ -274,7 +274,7 @@
             this.groupBox4.Size = new System.Drawing.Size(706, 548);
             this.groupBox4.TabIndex = 15;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Aktif Randevular";
+            this.groupBox4.Text = "Randevu Listesi";
             // 
             // dataGridView2
             // 

@@ -43,6 +43,7 @@
             this.LblTc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -101,6 +102,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(861, 590);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
@@ -128,6 +130,7 @@
             this.BtnMuayene.TabIndex = 20;
             this.BtnMuayene.Text = "Muayene Et";
             this.BtnMuayene.UseVisualStyleBackColor = false;
+            this.BtnMuayene.Click += new System.EventHandler(this.BtnMuayene_Click);
             // 
             // BtnBilgiDuzenle
             // 
@@ -140,6 +143,7 @@
             this.BtnBilgiDuzenle.TabIndex = 19;
             this.BtnBilgiDuzenle.Text = "Bilgilerimi Düzenle";
             this.BtnBilgiDuzenle.UseVisualStyleBackColor = false;
+            this.BtnBilgiDuzenle.Click += new System.EventHandler(this.BtnBilgiDuzenle_Click);
             // 
             // groupBox1
             // 
@@ -215,12 +219,31 @@
             this.BtnClose.Text = "X";
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BackgroundImage = global::Hastane_Proje.Properties.Resources.icons8_left_arrow_481;
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(12, 6);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(51, 36);
+            this.guna2Button1.TabIndex = 29;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // FrmDoktorDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1270, 695);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
@@ -260,5 +283,6 @@
         private System.Windows.Forms.Label LblTc;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button BtnClose;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

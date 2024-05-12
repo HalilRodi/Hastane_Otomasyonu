@@ -35,14 +35,18 @@
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
             this.BtnReceteYaz = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.LblHastaAdSoyad = new System.Windows.Forms.Label();
+            this.TxtAdSoyad = new System.Windows.Forms.TextBox();
+            this.LblHastaTC = new System.Windows.Forms.Label();
+            this.MskTC = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // RchSonuc
             // 
-            this.RchSonuc.Location = new System.Drawing.Point(236, 166);
+            this.RchSonuc.Location = new System.Drawing.Point(235, 238);
             this.RchSonuc.Name = "RchSonuc";
-            this.RchSonuc.Size = new System.Drawing.Size(183, 161);
+            this.RchSonuc.Size = new System.Drawing.Size(183, 99);
             this.RchSonuc.TabIndex = 0;
             this.RchSonuc.Text = "";
             // 
@@ -50,7 +54,7 @@
             // 
             this.LblTeshis.AutoSize = true;
             this.LblTeshis.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.LblTeshis.Location = new System.Drawing.Point(162, 166);
+            this.LblTeshis.Location = new System.Drawing.Point(147, 238);
             this.LblTeshis.Name = "LblTeshis";
             this.LblTeshis.Size = new System.Drawing.Size(68, 23);
             this.LblTeshis.TabIndex = 1;
@@ -70,7 +74,7 @@
             this.Cmbİlac.HoverState.Parent = this.Cmbİlac;
             this.Cmbİlac.ItemHeight = 30;
             this.Cmbİlac.ItemsAppearance.Parent = this.Cmbİlac;
-            this.Cmbİlac.Location = new System.Drawing.Point(236, 352);
+            this.Cmbİlac.Location = new System.Drawing.Point(235, 352);
             this.Cmbİlac.Name = "Cmbİlac";
             this.Cmbİlac.ShadowDecoration.Parent = this.Cmbİlac;
             this.Cmbİlac.Size = new System.Drawing.Size(183, 36);
@@ -132,11 +136,52 @@
             this.guna2CirclePictureBox1.TabIndex = 3;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
+            // LblHastaAdSoyad
+            // 
+            this.LblHastaAdSoyad.AutoSize = true;
+            this.LblHastaAdSoyad.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.LblHastaAdSoyad.Location = new System.Drawing.Point(75, 139);
+            this.LblHastaAdSoyad.Name = "LblHastaAdSoyad";
+            this.LblHastaAdSoyad.Size = new System.Drawing.Size(140, 23);
+            this.LblHastaAdSoyad.TabIndex = 20;
+            this.LblHastaAdSoyad.Text = "Hasta Ad-Soyad:";
+            // 
+            // TxtAdSoyad
+            // 
+            this.TxtAdSoyad.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.TxtAdSoyad.Location = new System.Drawing.Point(235, 136);
+            this.TxtAdSoyad.Name = "TxtAdSoyad";
+            this.TxtAdSoyad.Size = new System.Drawing.Size(183, 31);
+            this.TxtAdSoyad.TabIndex = 21;
+            // 
+            // LblHastaTC
+            // 
+            this.LblHastaTC.AutoSize = true;
+            this.LblHastaTC.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.LblHastaTC.Location = new System.Drawing.Point(129, 188);
+            this.LblHastaTC.Name = "LblHastaTC";
+            this.LblHastaTC.Size = new System.Drawing.Size(86, 23);
+            this.LblHastaTC.TabIndex = 22;
+            this.LblHastaTC.Text = "Hasta TC:";
+            // 
+            // MskTC
+            // 
+            this.MskTC.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.MskTC.Location = new System.Drawing.Point(235, 188);
+            this.MskTC.Mask = "00000000000";
+            this.MskTC.Name = "MskTC";
+            this.MskTC.Size = new System.Drawing.Size(183, 31);
+            this.MskTC.TabIndex = 23;
+            // 
             // FrmMuayene
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 552);
+            this.Controls.Add(this.MskTC);
+            this.Controls.Add(this.LblHastaTC);
+            this.Controls.Add(this.TxtAdSoyad);
+            this.Controls.Add(this.LblHastaAdSoyad);
             this.Controls.Add(this.BtnReceteYaz);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.guna2CirclePictureBox1);
@@ -164,5 +209,9 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button BtnClose;
         private Guna.UI2.WinForms.Guna2Button BtnReceteYaz;
+        private System.Windows.Forms.Label LblHastaAdSoyad;
+        private System.Windows.Forms.TextBox TxtAdSoyad;
+        private System.Windows.Forms.Label LblHastaTC;
+        private System.Windows.Forms.MaskedTextBox MskTC;
     }
 }

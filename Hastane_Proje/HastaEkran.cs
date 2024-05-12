@@ -66,7 +66,6 @@ namespace Hastane_Proje
             FrmHastaGuncelle frmHastaGuncelle = new FrmHastaGuncelle();
             frmHastaGuncelle.tcno = LblTc.Text;
             frmHastaGuncelle.Show();
-            this.Hide();
         }
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -77,7 +76,6 @@ namespace Hastane_Proje
         {
             FrmRandevuListe frmRandevuListe = new FrmRandevuListe();
             frmRandevuListe.Show();
-            this.Hide();
         }
 
         
