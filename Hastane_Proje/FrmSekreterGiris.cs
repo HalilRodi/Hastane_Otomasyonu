@@ -35,7 +35,7 @@ namespace Hastane_Proje
 
         private void BtnGiris_Click_1(object sender, EventArgs e)
         {
-            if (MskTc.Text == "" || TxtSifre.Text == "")
+            if (MskTc.Text == "" || TxtSifre.Text == "" || checkBox1.Checked == false)
             {
                 MessageBox.Show("Boş kalan alanları lütfen doldurunuz .", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -76,6 +76,12 @@ namespace Hastane_Proje
             FrmGirisler frmGirisler = new FrmGirisler();
             frmGirisler.Show();
             this.Hide();
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
         }
     }
 }

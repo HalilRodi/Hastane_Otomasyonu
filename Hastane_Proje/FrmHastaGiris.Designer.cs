@@ -37,6 +37,7 @@
             this.BtnGiris = new System.Windows.Forms.Button();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -44,7 +45,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(164, 269);
+            this.label1.Location = new System.Drawing.Point(163, 254);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(155, 23);
             this.label1.TabIndex = 0;
@@ -55,7 +56,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(250, 321);
+            this.label2.Location = new System.Drawing.Point(249, 306);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 23);
             this.label2.TabIndex = 1;
@@ -64,7 +65,7 @@
             // MskTc
             // 
             this.MskTc.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTc.Location = new System.Drawing.Point(324, 263);
+            this.MskTc.Location = new System.Drawing.Point(323, 248);
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(162, 35);
@@ -74,7 +75,7 @@
             // TxtSifre
             // 
             this.TxtSifre.Font = new System.Drawing.Font("Corbel", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.TxtSifre.Location = new System.Drawing.Point(324, 317);
+            this.TxtSifre.Location = new System.Drawing.Point(323, 302);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(162, 33);
             this.TxtSifre.TabIndex = 3;
@@ -141,6 +142,19 @@
             this.guna2Button1.TabIndex = 18;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox1.Location = new System.Drawing.Point(323, 351);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(106, 23);
+            this.checkBox1.TabIndex = 19;
+            this.checkBox1.Text = "Doğrulama";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // FrmHastaGiris
             // 
             this.AcceptButton = this.BtnGiris;
@@ -150,6 +164,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Hastane_Proje.Properties.Resources.HOSPITAL1;
             this.ClientSize = new System.Drawing.Size(767, 579);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnGiris);
@@ -182,5 +197,6 @@
         private System.Windows.Forms.Button BtnGiris;
         private Guna.UI2.WinForms.Guna2Button BtnClose;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

@@ -36,6 +36,7 @@
             this.BtnGiris = new Guna.UI2.WinForms.Guna2Button();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // TxtSifre
@@ -89,7 +90,7 @@
             this.BtnGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.BtnGiris.ForeColor = System.Drawing.Color.Black;
             this.BtnGiris.HoverState.Parent = this.BtnGiris;
-            this.BtnGiris.Location = new System.Drawing.Point(236, 351);
+            this.BtnGiris.Location = new System.Drawing.Point(236, 374);
             this.BtnGiris.Name = "BtnGiris";
             this.BtnGiris.ShadowDecoration.Parent = this.BtnGiris;
             this.BtnGiris.Size = new System.Drawing.Size(189, 54);
@@ -131,6 +132,19 @@
             this.guna2Button1.TabIndex = 24;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkBox1.Location = new System.Drawing.Point(306, 336);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(106, 23);
+            this.checkBox1.TabIndex = 25;
+            this.checkBox1.Text = "Doğrulama";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
+            // 
             // FrmSekreterGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -139,6 +153,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Hastane_Proje.Properties.Resources.sekreter_grs;
             this.ClientSize = new System.Drawing.Size(751, 540);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.BtnGiris);
@@ -169,5 +184,6 @@
         private Guna.UI2.WinForms.Guna2Button BtnGiris;
         private Guna.UI2.WinForms.Guna2Button BtnClose;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
