@@ -191,12 +191,6 @@ namespace Hastane_Proje
            
         }
 
-        private void BtnDuyuru_Click(object sender, EventArgs e)
-        {
-            FrmDuyurular frm = new FrmDuyurular();
-            frm.Show();
-        }
-
         private void BtnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
