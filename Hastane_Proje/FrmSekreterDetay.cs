@@ -69,40 +69,60 @@ namespace Hastane_Proje
 
         private void BtnKaydet_Click(object sender, EventArgs e)
         {
+            DateTime randevuTarih;
+            TimeSpan randevuSaat;
             if (CmbBrans.Text == "" || CmbDoktor.Text == "" || MskTarih.MaskFull == false || MskSaat.MaskFull == false)
             {
                 MessageBox.Show("Boş kalan alanları lütfen doldurunuz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                // Tarih ve saat değerlerini alıyoruz
-                DateTime randevuTarih, randevuSaat;
-                if (!DateTime.TryParse(MskTarih.Text, out randevuTarih) || !DateTime.TryParseExact(MskSaat.Text, "HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out randevuSaat))
+                // Geçerli tarih mi kontrolü
+                if (!DateTime.TryParseExact(MskTarih.Text, "dd.MM.yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out randevuTarih))
                 {
-                    MessageBox.Show("Geçerli bir tarih ve saat giriniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Geçersiz tarih formatı. Lütfen doğru bir tarih girin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Geçmiş bir tarih ve saat girilip girilmediğini kontrol ediyoruz
-                DateTime simdikiZaman = DateTime.Now;
-                if (randevuTarih.Date < simdikiZaman.Date || (randevuTarih.Date == simdikiZaman.Date && randevuSaat.TimeOfDay < simdikiZaman.TimeOfDay))
+                // Geçmiş tarih kontrolü
+                if (randevuTarih.Date < DateTime.Today)
                 {
-                    MessageBox.Show("Geçmiş bir tarih veya saat giremezsiniz.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Geçmiş tarih seçilemez. Lütfen ileri bir tarih seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
-                // Tarih ve saat değerlerini belirli bir formata dönüştürüyoruz
-                string tarih = randevuTarih.ToString("yyyy-MM-dd"); // YYYY-MM-DD formatında tarih
-                string saat = randevuSaat.ToString("HH:mm"); // HH:MM formatında saat
+                // Kullanıcı tarafından girilen saati parçalara ayırma
+                string[] saatParcalari = MskSaat.Text.Split(':');
+                int saat, dakika;
+                if (saatParcalari.Length == 2 && int.TryParse(saatParcalari[0], out saat) && int.TryParse(saatParcalari[1], out dakika))
+                {
+                    randevuSaat = new TimeSpan(saat, dakika, 0); // Yeni TimeSpan oluşturma
+                }
+                else
+                {
+                    MessageBox.Show("Geçersiz saat formatı. Lütfen doğru bir saat girin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-                // Veritabanında bu tarihte bir randevu olup olmadığını kontrol ediyoruz
+                TimeSpan simdikiZaman = DateTime.Now.TimeOfDay; // Mevcut zamanın TimeSpan karşılığı
+                if (randevuSaat < simdikiZaman)
+                {
+                    MessageBox.Show("Geçmiş saat seçilemez. Lütfen ileri bir saat seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Convert the date to the format expected by SQL Server
+                string formattedDate = randevuTarih.ToString("yyyy-MM-dd");
+
+                // Check if the appointment already exists
                 SqlCommand kontrolKomut = new SqlCommand("SELECT COUNT(*) FROM Tbl_Randevular WHERE RandevuTarih = @p1 AND RandevuSaat = @p2", bgl.baglanti());
-                kontrolKomut.Parameters.AddWithValue("@p1", tarih); // YYYY-MM-DD formatında tarih
-                kontrolKomut.Parameters.AddWithValue("@p2", saat); // HH:MM formatında saat
-                int randevuSayisi = (int)kontrolKomut.ExecuteScalar();
+                kontrolKomut.Parameters.AddWithValue("@p1", formattedDate); // Use the formatted date
+                kontrolKomut.Parameters.AddWithValue("@p2", randevuSaat); // HH:MM formatında saat
+                int existingAppointmentsCount = (int)kontrolKomut.ExecuteScalar();
                 bgl.baglanti().Close();
 
-                if (randevuSayisi > 0)
+                // If any appointment exists, show an error message
+                if (existingAppointmentsCount > 0)
                 {
                     MessageBox.Show("Bu tarihte ve saatte bir randevu zaten mevcut.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -112,14 +132,15 @@ namespace Hastane_Proje
                 SqlCommand komutkaydet = new SqlCommand("INSERT INTO Tbl_Randevular (RandevuBrans, RandevuDoktor, RandevuTarih, RandevuSaat) VALUES (@p1, @p2, @p3, @p4)", bgl.baglanti());
                 komutkaydet.Parameters.AddWithValue("@p1", CmbBrans.Text);
                 komutkaydet.Parameters.AddWithValue("@p2", CmbDoktor.Text);
-                komutkaydet.Parameters.AddWithValue("@p3", tarih); // YYYY-MM-DD formatında tarih
-                komutkaydet.Parameters.AddWithValue("@p4", saat); // HH:MM formatında saat
+                komutkaydet.Parameters.AddWithValue("@p3", formattedDate); // YYYY-MM-DD formatında tarih
+                komutkaydet.Parameters.AddWithValue("@p4", randevuSaat.ToString()); // HH:MM formatında saat
                 komutkaydet.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("Randevu oluşturuldu.", "Tebrikler", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 temizle();
             }
         }
+
 
 
 
@@ -174,6 +195,9 @@ namespace Hastane_Proje
             frm.Show();
         }
 
-        
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

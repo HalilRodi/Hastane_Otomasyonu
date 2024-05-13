@@ -38,6 +38,8 @@
             this.LblTc = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.RchSikayet = new System.Windows.Forms.RichTextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.MskSaat = new System.Windows.Forms.MaskedTextBox();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
             this.CmbBrans = new System.Windows.Forms.ComboBox();
@@ -58,9 +60,6 @@
             this.BtnBranşPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.RchSikayet = new System.Windows.Forms.RichTextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -152,6 +151,25 @@
             this.groupBox3.TabIndex = 20;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
+            // 
+            // RchSikayet
+            // 
+            this.RchSikayet.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RchSikayet.Location = new System.Drawing.Point(157, 328);
+            this.RchSikayet.Name = "RchSikayet";
+            this.RchSikayet.Size = new System.Drawing.Size(191, 110);
+            this.RchSikayet.TabIndex = 37;
+            this.RchSikayet.Text = "";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(57, 327);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(94, 23);
+            this.label8.TabIndex = 36;
+            this.label8.Text = "Şikayet :";
             // 
             // MskSaat
             // 
@@ -400,42 +418,7 @@
             this.BtnClose.Size = new System.Drawing.Size(43, 28);
             this.BtnClose.TabIndex = 24;
             this.BtnClose.Text = "X";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BackgroundImage = global::Hastane_Proje.Properties.Resources.icons8_left_arrow_481;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(12, 12);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(51, 36);
-            this.guna2Button1.TabIndex = 25;
-            // 
-            // RchSikayet
-            // 
-            this.RchSikayet.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RchSikayet.Location = new System.Drawing.Point(157, 328);
-            this.RchSikayet.Name = "RchSikayet";
-            this.RchSikayet.Size = new System.Drawing.Size(191, 110);
-            this.RchSikayet.TabIndex = 37;
-            this.RchSikayet.Text = "";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(57, 327);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(94, 23);
-            this.label8.TabIndex = 36;
-            this.label8.Text = "Şikayet :";
+            this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // FrmSekreterDetay
             // 
@@ -444,7 +427,6 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1271, 695);
-            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.BtnClose);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -501,7 +483,6 @@
         private System.Windows.Forms.Button BtnBranşPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
         private Guna.UI2.WinForms.Guna2Button BtnClose;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.RichTextBox RchSikayet;
         private System.Windows.Forms.Label label8;
     }
