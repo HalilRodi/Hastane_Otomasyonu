@@ -50,7 +50,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(94, 350);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(320, 58);
-            this.BtnGuncelle.TabIndex = 47;
+            this.BtnGuncelle.TabIndex = 5;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
@@ -101,7 +101,7 @@
             this.TxtSifre.Location = new System.Drawing.Point(212, 286);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(162, 31);
-            this.TxtSifre.TabIndex = 39;
+            this.TxtSifre.TabIndex = 4;
             this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTc
@@ -112,7 +112,7 @@
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(162, 31);
-            this.MskTc.TabIndex = 35;
+            this.MskTc.TabIndex = 3;
             this.MskTc.ValidatingType = typeof(int);
             // 
             // TxtSoyad
@@ -122,7 +122,7 @@
             this.TxtSoyad.Location = new System.Drawing.Point(212, 132);
             this.TxtSoyad.Name = "TxtSoyad";
             this.TxtSoyad.Size = new System.Drawing.Size(162, 31);
-            this.TxtSoyad.TabIndex = 34;
+            this.TxtSoyad.TabIndex = 1;
             // 
             // TxtAd
             // 
@@ -131,7 +131,7 @@
             this.TxtAd.Location = new System.Drawing.Point(212, 83);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(162, 31);
-            this.TxtAd.TabIndex = 33;
+            this.TxtAd.TabIndex = 0;
             // 
             // CmbBrans
             // 
@@ -140,7 +140,7 @@
             this.CmbBrans.Location = new System.Drawing.Point(212, 181);
             this.CmbBrans.Name = "CmbBrans";
             this.CmbBrans.Size = new System.Drawing.Size(162, 33);
-            this.CmbBrans.TabIndex = 48;
+            this.CmbBrans.TabIndex = 2;
             // 
             // label4
             // 

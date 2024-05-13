@@ -129,11 +129,13 @@ namespace Hastane_Proje
                 }
 
                 // Yeni randevuyu veritabanına ekliyoruz
-                SqlCommand komutkaydet = new SqlCommand("INSERT INTO Tbl_Randevular (RandevuBrans, RandevuDoktor, RandevuTarih, RandevuSaat) VALUES (@p1, @p2, @p3, @p4)", bgl.baglanti());
-                komutkaydet.Parameters.AddWithValue("@p1", CmbBrans.Text);
-                komutkaydet.Parameters.AddWithValue("@p2", CmbDoktor.Text);
-                komutkaydet.Parameters.AddWithValue("@p3", formattedDate); // YYYY-MM-DD formatında tarih
-                komutkaydet.Parameters.AddWithValue("@p4", randevuSaat.ToString()); // HH:MM formatında saat
+                SqlCommand komutkaydet = new SqlCommand("INSERT INTO Tbl_Randevular (HastaTC, RandevuBrans, RandevuDoktor, RandevuTarih, RandevuSaat, HastaSikayet) VALUES (@p1, @p2, @p3, @p4, @p5, @p6)", bgl.baglanti());
+                komutkaydet.Parameters.AddWithValue("@p1", MskTC.Text);
+                komutkaydet.Parameters.AddWithValue("@p2", CmbBrans.Text);
+                komutkaydet.Parameters.AddWithValue("@p3", CmbDoktor.Text);
+                komutkaydet.Parameters.AddWithValue("@p4", formattedDate); // YYYY-MM-DD formatında tarih
+                komutkaydet.Parameters.AddWithValue("@p5", randevuSaat.ToString()); // HH:MM formatında saat
+                komutkaydet.Parameters.AddWithValue("@p6", RchSikayet.Text);
                 komutkaydet.ExecuteNonQuery();
                 bgl.baglanti().Close();
                 MessageBox.Show("Randevu oluşturuldu.", "Tebrikler", MessageBoxButtons.OK, MessageBoxIcon.Information);

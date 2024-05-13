@@ -60,6 +60,8 @@
             this.BtnBranşPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -131,6 +133,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.MskTC);
             this.groupBox3.Controls.Add(this.RchSikayet);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.MskSaat);
@@ -141,6 +144,7 @@
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.BtnKaydet);
@@ -155,17 +159,17 @@
             // RchSikayet
             // 
             this.RchSikayet.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.RchSikayet.Location = new System.Drawing.Point(157, 328);
+            this.RchSikayet.Location = new System.Drawing.Point(157, 305);
             this.RchSikayet.Name = "RchSikayet";
             this.RchSikayet.Size = new System.Drawing.Size(191, 110);
-            this.RchSikayet.TabIndex = 37;
+            this.RchSikayet.TabIndex = 5;
             this.RchSikayet.Text = "";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(57, 327);
+            this.label8.Location = new System.Drawing.Point(57, 304);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 23);
             this.label8.TabIndex = 36;
@@ -174,40 +178,40 @@
             // MskSaat
             // 
             this.MskSaat.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskSaat.Location = new System.Drawing.Point(157, 257);
+            this.MskSaat.Location = new System.Drawing.Point(157, 256);
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
             this.MskSaat.Size = new System.Drawing.Size(71, 31);
-            this.MskSaat.TabIndex = 31;
+            this.MskSaat.TabIndex = 4;
             this.MskSaat.ValidatingType = typeof(System.DateTime);
             // 
             // CmbDoktor
             // 
             this.CmbDoktor.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbDoktor.FormattingEnabled = true;
-            this.CmbDoktor.Location = new System.Drawing.Point(157, 168);
+            this.CmbDoktor.Location = new System.Drawing.Point(157, 167);
             this.CmbDoktor.Name = "CmbDoktor";
             this.CmbDoktor.Size = new System.Drawing.Size(150, 37);
-            this.CmbDoktor.TabIndex = 29;
+            this.CmbDoktor.TabIndex = 2;
             // 
             // CmbBrans
             // 
             this.CmbBrans.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbBrans.FormattingEnabled = true;
-            this.CmbBrans.Location = new System.Drawing.Point(157, 122);
+            this.CmbBrans.Location = new System.Drawing.Point(157, 121);
             this.CmbBrans.Name = "CmbBrans";
             this.CmbBrans.Size = new System.Drawing.Size(150, 37);
-            this.CmbBrans.TabIndex = 28;
+            this.CmbBrans.TabIndex = 1;
             this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
             // MskTarih
             // 
             this.MskTarih.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTarih.Location = new System.Drawing.Point(157, 214);
+            this.MskTarih.Location = new System.Drawing.Point(157, 213);
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(123, 31);
-            this.MskTarih.TabIndex = 30;
+            this.MskTarih.TabIndex = 3;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // Txtid
@@ -223,7 +227,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(87, 265);
+            this.label4.Location = new System.Drawing.Point(87, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 23);
             this.label4.TabIndex = 23;
@@ -233,7 +237,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(75, 222);
+            this.label2.Location = new System.Drawing.Point(75, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 23);
             this.label2.TabIndex = 22;
@@ -243,7 +247,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(59, 180);
+            this.label7.Location = new System.Drawing.Point(59, 179);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(92, 23);
             this.label7.TabIndex = 21;
@@ -253,7 +257,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(71, 134);
+            this.label6.Location = new System.Drawing.Point(71, 133);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 23);
             this.label6.TabIndex = 20;
@@ -275,10 +279,10 @@
             this.BtnKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.BtnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.BtnKaydet.ForeColor = System.Drawing.Color.White;
-            this.BtnKaydet.Location = new System.Drawing.Point(33, 513);
+            this.BtnKaydet.Location = new System.Drawing.Point(33, 456);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(315, 64);
-            this.BtnKaydet.TabIndex = 35;
+            this.BtnKaydet.TabIndex = 6;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = false;
             this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
@@ -420,6 +424,24 @@
             this.BtnClose.Text = "X";
             this.BtnClose.Click += new System.EventHandler(this.BtnClose_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Georgia", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.Location = new System.Drawing.Point(45, 86);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(106, 23);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Hasta TC:";
+            // 
+            // MskTC
+            // 
+            this.MskTC.Location = new System.Drawing.Point(157, 83);
+            this.MskTC.Mask = "00000000000";
+            this.MskTC.Name = "MskTC";
+            this.MskTC.Size = new System.Drawing.Size(150, 29);
+            this.MskTC.TabIndex = 0;
+            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
@@ -485,5 +507,7 @@
         private Guna.UI2.WinForms.Guna2Button BtnClose;
         private System.Windows.Forms.RichTextBox RchSikayet;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MaskedTextBox MskTC;
     }
 }

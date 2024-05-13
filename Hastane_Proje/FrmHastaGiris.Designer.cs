@@ -69,7 +69,7 @@
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(162, 35);
-            this.MskTc.TabIndex = 2;
+            this.MskTc.TabIndex = 0;
             this.MskTc.ValidatingType = typeof(int);
             // 
             // TxtSifre
@@ -78,7 +78,7 @@
             this.TxtSifre.Location = new System.Drawing.Point(323, 302);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(162, 33);
-            this.TxtSifre.TabIndex = 3;
+            this.TxtSifre.TabIndex = 1;
             this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // LnkKayıt
@@ -103,7 +103,7 @@
             this.BtnGiris.Location = new System.Drawing.Point(209, 390);
             this.BtnGiris.Name = "BtnGiris";
             this.BtnGiris.Size = new System.Drawing.Size(318, 62);
-            this.BtnGiris.TabIndex = 5;
+            this.BtnGiris.TabIndex = 3;
             this.BtnGiris.Text = "Giriş Yap";
             this.BtnGiris.UseVisualStyleBackColor = false;
             this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
@@ -150,7 +150,7 @@
             this.checkBox1.Location = new System.Drawing.Point(323, 351);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(106, 23);
-            this.checkBox1.TabIndex = 19;
+            this.checkBox1.TabIndex = 2;
             this.checkBox1.Text = "Doğrulama";
             this.checkBox1.UseVisualStyleBackColor = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);

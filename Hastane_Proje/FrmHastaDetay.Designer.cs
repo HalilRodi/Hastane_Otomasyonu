@@ -99,7 +99,7 @@
             this.BtnRandevu.Name = "BtnRandevu";
             this.BtnRandevu.ShadowDecoration.Parent = this.BtnRandevu;
             this.BtnRandevu.Size = new System.Drawing.Size(229, 45);
-            this.BtnRandevu.TabIndex = 40;
+            this.BtnRandevu.TabIndex = 5;
             this.BtnRandevu.Text = "Randevu Al";
             this.BtnRandevu.Click += new System.EventHandler(this.BtnRandevu_Click_1);
             // 
@@ -162,7 +162,7 @@
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
             this.MskSaat.Size = new System.Drawing.Size(82, 31);
-            this.MskSaat.TabIndex = 35;
+            this.MskSaat.TabIndex = 3;
             this.MskSaat.ValidatingType = typeof(System.DateTime);
             // 
             // MskTarih
@@ -172,7 +172,7 @@
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
             this.MskTarih.Size = new System.Drawing.Size(123, 31);
-            this.MskTarih.TabIndex = 34;
+            this.MskTarih.TabIndex = 2;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // label4
@@ -201,7 +201,7 @@
             this.RchSikayet.Location = new System.Drawing.Point(295, 324);
             this.RchSikayet.Name = "RchSikayet";
             this.RchSikayet.Size = new System.Drawing.Size(229, 110);
-            this.RchSikayet.TabIndex = 17;
+            this.RchSikayet.TabIndex = 4;
             this.RchSikayet.Text = "";
             // 
             // label7
@@ -231,7 +231,7 @@
             this.CmbDoktor.Location = new System.Drawing.Point(295, 175);
             this.CmbDoktor.Name = "CmbDoktor";
             this.CmbDoktor.Size = new System.Drawing.Size(229, 37);
-            this.CmbDoktor.TabIndex = 15;
+            this.CmbDoktor.TabIndex = 1;
             this.CmbDoktor.SelectedIndexChanged += new System.EventHandler(this.CmbDoktor_SelectedIndexChanged);
             // 
             // CmbBrans
@@ -241,7 +241,7 @@
             this.CmbBrans.Location = new System.Drawing.Point(295, 129);
             this.CmbBrans.Name = "CmbBrans";
             this.CmbBrans.Size = new System.Drawing.Size(229, 37);
-            this.CmbBrans.TabIndex = 14;
+            this.CmbBrans.TabIndex = 0;
             this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
             // label6

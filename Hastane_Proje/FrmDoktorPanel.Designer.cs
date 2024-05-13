@@ -84,7 +84,7 @@
             this.MskTc.Mask = "00000000000";
             this.MskTc.Name = "MskTc";
             this.MskTc.Size = new System.Drawing.Size(162, 35);
-            this.MskTc.TabIndex = 12;
+            this.MskTc.TabIndex = 2;
             this.MskTc.ValidatingType = typeof(int);
             // 
             // TxtSoyad
@@ -93,7 +93,7 @@
             this.TxtSoyad.Location = new System.Drawing.Point(184, 121);
             this.TxtSoyad.Name = "TxtSoyad";
             this.TxtSoyad.Size = new System.Drawing.Size(162, 33);
-            this.TxtSoyad.TabIndex = 11;
+            this.TxtSoyad.TabIndex = 1;
             // 
             // TxtAd
             // 
@@ -101,7 +101,7 @@
             this.TxtAd.Location = new System.Drawing.Point(184, 72);
             this.TxtAd.Name = "TxtAd";
             this.TxtAd.Size = new System.Drawing.Size(162, 33);
-            this.TxtAd.TabIndex = 10;
+            this.TxtAd.TabIndex = 0;
             // 
             // CmbBrans
             // 
@@ -110,7 +110,7 @@
             this.CmbBrans.Location = new System.Drawing.Point(184, 220);
             this.CmbBrans.Name = "CmbBrans";
             this.CmbBrans.Size = new System.Drawing.Size(162, 37);
-            this.CmbBrans.TabIndex = 29;
+            this.CmbBrans.TabIndex = 3;
             // 
             // label6
             // 
@@ -138,7 +138,7 @@
             this.TxtSifre.Location = new System.Drawing.Point(184, 273);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(162, 33);
-            this.TxtSifre.TabIndex = 31;
+            this.TxtSifre.TabIndex = 4;
             this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // BtnEkle
@@ -149,7 +149,7 @@
             this.BtnEkle.Location = new System.Drawing.Point(38, 338);
             this.BtnEkle.Name = "BtnEkle";
             this.BtnEkle.Size = new System.Drawing.Size(101, 44);
-            this.BtnEkle.TabIndex = 35;
+            this.BtnEkle.TabIndex = 5;
             this.BtnEkle.Text = "Ekle";
             this.BtnEkle.UseVisualStyleBackColor = false;
             this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
@@ -180,7 +180,7 @@
             this.BtnSil.Location = new System.Drawing.Point(145, 338);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(101, 44);
-            this.BtnSil.TabIndex = 36;
+            this.BtnSil.TabIndex = 6;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = false;
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
@@ -193,7 +193,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(252, 338);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(101, 44);
-            this.BtnGuncelle.TabIndex = 37;
+            this.BtnGuncelle.TabIndex = 7;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);

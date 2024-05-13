@@ -47,7 +47,7 @@
             this.RchSonuc.Location = new System.Drawing.Point(235, 238);
             this.RchSonuc.Name = "RchSonuc";
             this.RchSonuc.Size = new System.Drawing.Size(183, 99);
-            this.RchSonuc.TabIndex = 0;
+            this.RchSonuc.TabIndex = 2;
             this.RchSonuc.Text = "";
             // 
             // LblTeshis
@@ -78,7 +78,7 @@
             this.Cmbİlac.Name = "Cmbİlac";
             this.Cmbİlac.ShadowDecoration.Parent = this.Cmbİlac;
             this.Cmbİlac.Size = new System.Drawing.Size(183, 36);
-            this.Cmbİlac.TabIndex = 2;
+            this.Cmbİlac.TabIndex = 3;
             this.Cmbİlac.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // Lblilaç
@@ -120,7 +120,7 @@
             this.BtnReceteYaz.Name = "BtnReceteYaz";
             this.BtnReceteYaz.ShadowDecoration.Parent = this.BtnReceteYaz;
             this.BtnReceteYaz.Size = new System.Drawing.Size(180, 45);
-            this.BtnReceteYaz.TabIndex = 19;
+            this.BtnReceteYaz.TabIndex = 4;
             this.BtnReceteYaz.Text = "Reçete Yaz";
             this.BtnReceteYaz.Click += new System.EventHandler(this.BtnReceteYaz_Click);
             // 
@@ -152,7 +152,7 @@
             this.TxtAdSoyad.Location = new System.Drawing.Point(235, 136);
             this.TxtAdSoyad.Name = "TxtAdSoyad";
             this.TxtAdSoyad.Size = new System.Drawing.Size(183, 31);
-            this.TxtAdSoyad.TabIndex = 21;
+            this.TxtAdSoyad.TabIndex = 0;
             // 
             // LblHastaTC
             // 
@@ -171,7 +171,7 @@
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(183, 31);
-            this.MskTC.TabIndex = 23;
+            this.MskTC.TabIndex = 1;
             // 
             // FrmMuayene
             // 

@@ -49,7 +49,7 @@
             this.BtnGuncelle.Location = new System.Drawing.Point(45, 286);
             this.BtnGuncelle.Name = "BtnGuncelle";
             this.BtnGuncelle.Size = new System.Drawing.Size(276, 56);
-            this.BtnGuncelle.TabIndex = 52;
+            this.BtnGuncelle.TabIndex = 4;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = false;
             this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
@@ -62,7 +62,7 @@
             this.BtnSil.Location = new System.Drawing.Point(186, 224);
             this.BtnSil.Name = "BtnSil";
             this.BtnSil.Size = new System.Drawing.Size(135, 56);
-            this.BtnSil.TabIndex = 51;
+            this.BtnSil.TabIndex = 3;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = false;
             this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
@@ -93,7 +93,7 @@
             this.BtnEkle.Location = new System.Drawing.Point(45, 224);
             this.BtnEkle.Name = "BtnEkle";
             this.BtnEkle.Size = new System.Drawing.Size(135, 56);
-            this.BtnEkle.TabIndex = 49;
+            this.BtnEkle.TabIndex = 2;
             this.BtnEkle.Text = "Ekle";
             this.BtnEkle.UseVisualStyleBackColor = false;
             this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
@@ -124,7 +124,7 @@
             this.TxtBrans.Location = new System.Drawing.Point(159, 164);
             this.TxtBrans.Name = "TxtBrans";
             this.TxtBrans.Size = new System.Drawing.Size(162, 33);
-            this.TxtBrans.TabIndex = 40;
+            this.TxtBrans.TabIndex = 1;
             // 
             // Txtid
             // 
@@ -133,7 +133,7 @@
             this.Txtid.Location = new System.Drawing.Point(159, 115);
             this.Txtid.Name = "Txtid";
             this.Txtid.Size = new System.Drawing.Size(162, 33);
-            this.Txtid.TabIndex = 39;
+            this.Txtid.TabIndex = 0;
             // 
             // FrmBransPanel
             // 

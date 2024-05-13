@@ -166,7 +166,7 @@
             this.BtnKayıt.Location = new System.Drawing.Point(94, 400);
             this.BtnKayıt.Name = "BtnKayıt";
             this.BtnKayıt.Size = new System.Drawing.Size(320, 58);
-            this.BtnKayıt.TabIndex = 14;
+            this.BtnKayıt.TabIndex = 8;
             this.BtnKayıt.Text = "Kayıt Ol";
             this.BtnKayıt.UseVisualStyleBackColor = false;
             this.BtnKayıt.Click += new System.EventHandler(this.BtnKayıt_Click);
@@ -178,7 +178,7 @@
             this.checkBox1.Location = new System.Drawing.Point(186, 361);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(186, 27);
-            this.checkBox1.TabIndex = 13;
+            this.checkBox1.TabIndex = 7;
             this.checkBox1.Text = "Ben Robot Değilim";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
