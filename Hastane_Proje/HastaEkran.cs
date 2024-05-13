@@ -75,6 +75,7 @@ namespace Hastane_Proje
         private void BtnRandevular_Click(object sender, EventArgs e)
         {
             FrmRandevuListe frmRandevuListe = new FrmRandevuListe();
+            frmRandevuListe.hastatc=LblTc.Text;
             frmRandevuListe.Show();
         }
 

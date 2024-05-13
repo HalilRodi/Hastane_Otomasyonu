@@ -181,6 +181,7 @@
             this.BtnRandevular.Size = new System.Drawing.Size(232, 55);
             this.BtnRandevular.TabIndex = 21;
             this.BtnRandevular.Text = "Randevularım";
+            this.BtnRandevular.Click += new System.EventHandler(this.BtnRandevular_Click);
             // 
             // BtnDetay
             // 

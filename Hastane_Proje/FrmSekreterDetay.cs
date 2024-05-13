@@ -182,7 +182,7 @@ namespace Hastane_Proje
 
         private void BtnRandevuListe_Click(object sender, EventArgs e)
         {
-            FrmRandevuListe frm = new FrmRandevuListe();
+            FrmSekreterRandevu frm = new FrmSekreterRandevu();
             frm.Show();
         }
 

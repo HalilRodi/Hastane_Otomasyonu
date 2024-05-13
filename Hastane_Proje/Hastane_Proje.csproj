@@ -94,6 +94,12 @@
     <Compile Include="FrmDoktorPanel.Designer.cs">
       <DependentUpon>FrmDoktorPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDoktorRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoktorRandevu.Designer.cs">
+      <DependentUpon>FrmDoktorRandevu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGirisler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +160,12 @@
     <Compile Include="FrmSekreterGiris.Designer.cs">
       <DependentUpon>FrmSekreterGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSekreterRandevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSekreterRandevu.Designer.cs">
+      <DependentUpon>FrmSekreterRandevu.cs</DependentUpon>
+    </Compile>
     <Compile Include="HastaEkran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +196,9 @@
     <EmbeddedResource Include="FrmDoktorPanel.resx">
       <DependentUpon>FrmDoktorPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoktorRandevu.resx">
+      <DependentUpon>FrmDoktorRandevu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGirisler.resx">
       <DependentUpon>FrmGirisler.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSekreterGiris.resx">
       <DependentUpon>FrmSekreterGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSekreterRandevu.resx">
+      <DependentUpon>FrmSekreterRandevu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HastaEkran.resx">
       <DependentUpon>HastaEkran.cs</DependentUpon>
@@ -305,6 +323,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\REÇETE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REÇETE1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REÇETE2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

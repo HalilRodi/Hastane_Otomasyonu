@@ -243,6 +243,26 @@ namespace Hastane_Proje.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap REÇETE1 {
+            get {
+                object obj = ResourceManager.GetObject("REÇETE1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap REÇETE2 {
+            get {
+                object obj = ResourceManager.GetObject("REÇETE2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap Sağlığınız_emin_ellerde___ {
             get {
                 object obj = ResourceManager.GetObject("Sağlığınız emin ellerde...", resourceCulture);

@@ -34,11 +34,13 @@
             this.Lblilaç = new System.Windows.Forms.Label();
             this.BtnClose = new Guna.UI2.WinForms.Guna2Button();
             this.BtnReceteYaz = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.LblHastaAdSoyad = new System.Windows.Forms.Label();
             this.TxtAdSoyad = new System.Windows.Forms.TextBox();
             this.LblHastaTC = new System.Windows.Forms.Label();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
+            this.LblTarih = new System.Windows.Forms.Label();
+            this.MskTarih = new System.Windows.Forms.MaskedTextBox();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +49,7 @@
             this.RchSonuc.Location = new System.Drawing.Point(235, 238);
             this.RchSonuc.Name = "RchSonuc";
             this.RchSonuc.Size = new System.Drawing.Size(183, 99);
-            this.RchSonuc.TabIndex = 2;
+            this.RchSonuc.TabIndex = 3;
             this.RchSonuc.Text = "";
             // 
             // LblTeshis
@@ -78,7 +80,7 @@
             this.Cmbİlac.Name = "Cmbİlac";
             this.Cmbİlac.ShadowDecoration.Parent = this.Cmbİlac;
             this.Cmbİlac.Size = new System.Drawing.Size(183, 36);
-            this.Cmbİlac.TabIndex = 3;
+            this.Cmbİlac.TabIndex = 4;
             this.Cmbİlac.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // Lblilaç
@@ -120,9 +122,66 @@
             this.BtnReceteYaz.Name = "BtnReceteYaz";
             this.BtnReceteYaz.ShadowDecoration.Parent = this.BtnReceteYaz;
             this.BtnReceteYaz.Size = new System.Drawing.Size(180, 45);
-            this.BtnReceteYaz.TabIndex = 4;
+            this.BtnReceteYaz.TabIndex = 5;
             this.BtnReceteYaz.Text = "Reçete Yaz";
             this.BtnReceteYaz.Click += new System.EventHandler(this.BtnReceteYaz_Click);
+            // 
+            // LblHastaAdSoyad
+            // 
+            this.LblHastaAdSoyad.AutoSize = true;
+            this.LblHastaAdSoyad.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.LblHastaAdSoyad.Location = new System.Drawing.Point(75, 96);
+            this.LblHastaAdSoyad.Name = "LblHastaAdSoyad";
+            this.LblHastaAdSoyad.Size = new System.Drawing.Size(140, 23);
+            this.LblHastaAdSoyad.TabIndex = 20;
+            this.LblHastaAdSoyad.Text = "Hasta Ad-Soyad:";
+            // 
+            // TxtAdSoyad
+            // 
+            this.TxtAdSoyad.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.TxtAdSoyad.Location = new System.Drawing.Point(235, 93);
+            this.TxtAdSoyad.Name = "TxtAdSoyad";
+            this.TxtAdSoyad.Size = new System.Drawing.Size(183, 31);
+            this.TxtAdSoyad.TabIndex = 0;
+            // 
+            // LblHastaTC
+            // 
+            this.LblHastaTC.AutoSize = true;
+            this.LblHastaTC.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.LblHastaTC.Location = new System.Drawing.Point(129, 145);
+            this.LblHastaTC.Name = "LblHastaTC";
+            this.LblHastaTC.Size = new System.Drawing.Size(86, 23);
+            this.LblHastaTC.TabIndex = 22;
+            this.LblHastaTC.Text = "Hasta TC:";
+            // 
+            // MskTC
+            // 
+            this.MskTC.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.MskTC.Location = new System.Drawing.Point(235, 145);
+            this.MskTC.Mask = "00000000000";
+            this.MskTC.Name = "MskTC";
+            this.MskTC.Size = new System.Drawing.Size(183, 31);
+            this.MskTC.TabIndex = 1;
+            // 
+            // LblTarih
+            // 
+            this.LblTarih.AutoSize = true;
+            this.LblTarih.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.LblTarih.Location = new System.Drawing.Point(161, 197);
+            this.LblTarih.Name = "LblTarih";
+            this.LblTarih.Size = new System.Drawing.Size(54, 23);
+            this.LblTarih.TabIndex = 22;
+            this.LblTarih.Text = "Tarih:";
+            // 
+            // MskTarih
+            // 
+            this.MskTarih.Font = new System.Drawing.Font("Corbel", 14.25F);
+            this.MskTarih.Location = new System.Drawing.Point(235, 189);
+            this.MskTarih.Mask = "00/00/0000";
+            this.MskTarih.Name = "MskTarih";
+            this.MskTarih.Size = new System.Drawing.Size(183, 31);
+            this.MskTarih.TabIndex = 2;
+            this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
             // guna2CirclePictureBox1
             // 
@@ -136,49 +195,14 @@
             this.guna2CirclePictureBox1.TabIndex = 3;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // LblHastaAdSoyad
-            // 
-            this.LblHastaAdSoyad.AutoSize = true;
-            this.LblHastaAdSoyad.Font = new System.Drawing.Font("Corbel", 14.25F);
-            this.LblHastaAdSoyad.Location = new System.Drawing.Point(75, 139);
-            this.LblHastaAdSoyad.Name = "LblHastaAdSoyad";
-            this.LblHastaAdSoyad.Size = new System.Drawing.Size(140, 23);
-            this.LblHastaAdSoyad.TabIndex = 20;
-            this.LblHastaAdSoyad.Text = "Hasta Ad-Soyad:";
-            // 
-            // TxtAdSoyad
-            // 
-            this.TxtAdSoyad.Font = new System.Drawing.Font("Corbel", 14.25F);
-            this.TxtAdSoyad.Location = new System.Drawing.Point(235, 136);
-            this.TxtAdSoyad.Name = "TxtAdSoyad";
-            this.TxtAdSoyad.Size = new System.Drawing.Size(183, 31);
-            this.TxtAdSoyad.TabIndex = 0;
-            // 
-            // LblHastaTC
-            // 
-            this.LblHastaTC.AutoSize = true;
-            this.LblHastaTC.Font = new System.Drawing.Font("Corbel", 14.25F);
-            this.LblHastaTC.Location = new System.Drawing.Point(129, 188);
-            this.LblHastaTC.Name = "LblHastaTC";
-            this.LblHastaTC.Size = new System.Drawing.Size(86, 23);
-            this.LblHastaTC.TabIndex = 22;
-            this.LblHastaTC.Text = "Hasta TC:";
-            // 
-            // MskTC
-            // 
-            this.MskTC.Font = new System.Drawing.Font("Corbel", 14.25F);
-            this.MskTC.Location = new System.Drawing.Point(235, 188);
-            this.MskTC.Mask = "00000000000";
-            this.MskTC.Name = "MskTC";
-            this.MskTC.Size = new System.Drawing.Size(183, 31);
-            this.MskTC.TabIndex = 1;
-            // 
             // FrmMuayene
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 552);
+            this.Controls.Add(this.MskTarih);
             this.Controls.Add(this.MskTC);
+            this.Controls.Add(this.LblTarih);
             this.Controls.Add(this.LblHastaTC);
             this.Controls.Add(this.TxtAdSoyad);
             this.Controls.Add(this.LblHastaAdSoyad);
@@ -213,5 +237,7 @@
         private System.Windows.Forms.TextBox TxtAdSoyad;
         private System.Windows.Forms.Label LblHastaTC;
         private System.Windows.Forms.MaskedTextBox MskTC;
+        private System.Windows.Forms.Label LblTarih;
+        private System.Windows.Forms.MaskedTextBox MskTarih;
     }
 }

@@ -136,8 +136,11 @@
   <data name="icons8-left-arrow-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-left-arrow-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="WhatsApp Görsel 2024-05-05 saat 19.36.52_9f0c4111" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp Görsel 2024-05-05 saat 19.36.52_9f0c4111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="REÇETE1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\REÇETE1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8-left-arrow-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-left-arrow-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dokto grs1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dokto grs1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,6 +150,9 @@
   </data>
   <data name="doktor ana ekran1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\doktor ana ekran1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="REÇETE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\REÇETE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="HOSPITAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HOSPITAL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,10 +184,10 @@
   <data name="Adsız tasarım" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Adsız tasarım.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-left-arrow-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-left-arrow-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WhatsApp Görsel 2024-05-05 saat 19.36.52_9f0c4111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WhatsApp Görsel 2024-05-05 saat 19.36.52_9f0c4111.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="REÇETE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\REÇETE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="REÇETE2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\REÇETE2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

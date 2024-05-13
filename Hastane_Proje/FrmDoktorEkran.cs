@@ -63,7 +63,6 @@ namespace Hastane_Proje
             FrmDoktorGuncelle frmDoktorGuncelle = new FrmDoktorGuncelle();
             frmDoktorGuncelle.doktortc = LblTc.Text;
             frmDoktorGuncelle.Show();
-            this.Hide();
         }
 
         private void BtnDetay_Click(object sender, EventArgs e)
@@ -71,6 +70,13 @@ namespace Hastane_Proje
             FrmDoktorDetay frmDoktorDetay = new FrmDoktorDetay();
             frmDoktorDetay.doktortc = LblTc.Text;
             frmDoktorDetay.Show();
+        }
+
+        private void BtnRandevular_Click(object sender, EventArgs e)
+        {
+            FrmDoktorRandevu frmDoktorRandevu= new FrmDoktorRandevu();
+            frmDoktorRandevu.doktoradi = LblAdsoyad.Text;
+            frmDoktorRandevu.Show();
         }
     }
 }
